@@ -1,0 +1,34 @@
+# i18n/ko.yaml
+# 이 파일에 번역할 내용을 추가합니다.
+
+# 홈페이지 섹션 제목
+- id: "section_skills"
+  translation: "기술"
+- id: "section_experience"
+  translation: "경험"
+- id: "section_projects"
+  translation: "프로젝트"
+- id: "section_posts"
+  translation: "최신 포스트"
+- id: "section_contact"
+  translation: "연락처"
+
+# 기타 UI 요소
+- id: "search_placeholder"
+  translation: "검색..."
+- id: "recent_posts"
+  translation: "최신 포스트"
+- id: "see_all"
+  translation: "모두 보기"
+- id: "contact_me"
+  translation: "편하게 연락주세요"
+
+# 날짜 및 시간
+- id: "posted_on"
+  translation: "작성일"
+- id: "reading_time"
+  translation: "분 분량" # 예: 5분 분량
+
+# 페이지 하단 (Footer)
+- id: "powered_by"
+  translation: "Powered by" # 이 부분은 번역하지 않아도 좋습니다.

@@ -1,5 +1,5 @@
 ---
-title: Contact
+title: 연락처
 date: 2022-10-24
 
 type: landing
@@ -7,9 +7,10 @@ type: landing
 sections:
   - block: contact
     content:
-      title: Contact
+      title: 연락처
       text: |-
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tempus augue non tempor egestas. Proin nisl nunc, dignissim in accumsan dapibus, auctor ullamcorper neque. Quisque at elit felis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Aenean eget elementum odio. Cras interdum eget risus sit amet aliquet. In volutpat, nisl ut fringilla dignissim, arcu nisl suscipit ante, at accumsan sapien nisl eu eros.
+        궁금한 점이 있으시면 언제든지 아래 연락처나 양식을 통해 문의해주세요.
+      # 이메일, 전화번호, 주소 등은 실제 정보로 수정해주세요.
       email: test@example.org
       phone: 888 888 88 88
       address:
@@ -22,27 +23,27 @@ sections:
       coordinates:
         latitude: '37.4275'
         longitude: '-122.1697'
-      directions: Enter Building 1 and take the stairs to Office 200 on Floor 2
+      directions: 1번 건물로 들어오셔서 계단을 이용해 2층 200호로 오시면 됩니다.
       office_hours:
-        - 'Monday 10:00 to 13:00'
-        - 'Wednesday 09:00 to 10:00'
+        - '월요일 10:00 ~ 13:00'
+        - '수요일 09:00 ~ 10:00'
       appointment_url: 'https://calendly.com'
       #contact_links:
       #  - icon: comments
       #    icon_pack: fas
       #    name: Discuss on Forum
       #    link: 'https://discourse.gohugo.io'
-    
-      # Automatically link email and phone or display as text?
+
+      # 이메일과 전화번호를 텍스트로 표시할지, 자동으로 링크를 걸지 설정합니다.
       autolink: true
-    
-      # Email form provider
+
+      # 이메일 전송 폼 설정
       form:
         provider: netlify
         formspree:
           id:
         netlify:
-          # Enable CAPTCHA challenge to reduce spam?
+          # 스팸 방지를 위한 CAPTCHA 사용 여부
           captcha: false
     design:
       columns: '1'
