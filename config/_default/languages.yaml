@@ -1,22 +1,31 @@
-# Languages
-#   Create a section for each of your site's languages.
-#   Documentation: https://docs.hugoblox.com/reference/language/
-
-# Default language
 en:
   languageCode: en-us
-  # Uncomment for multi-lingual sites, and move English content into `en` sub-folder.
-  #contentDir: content/en
+  title: SeungHyun Kim
+  weight: 2
+  contentDir: content/en
 
-# Uncomment the lines below to configure your website in a second language.
-#zh:
-#  languageCode: zh-Hans
-#  contentDir: content/zh
-#  title: Chinese website title...
-#  params:
-#    description: Site description in Chinese...
-#  menu:
-#    main:
-#      - name: 传
-#        url: '#about'
-#        weight: 1
+ko:
+  languageCode: ko
+  title: 김승현
+  weight: 1
+  contentDir: content/ko
+  menu:
+    main:
+      - name: 투어
+        url: tour
+        weight: 10
+      - name: 소식
+        url: post
+        weight: 20
+      - name: 구성원
+        url: people
+        weight: 30
+      - name: 이벤트
+        url: event
+        weight: 40
+      - name: 연구실적
+        url: publication
+        weight: 50
+      - name: 연락처
+        url: contact
+        weight: 60
