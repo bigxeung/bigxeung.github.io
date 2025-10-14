@@ -1,5 +1,5 @@
 ---
-title: People
+title: 구성원
 date: 2022-10-24
 
 type: landing
@@ -7,7 +7,7 @@ type: landing
 sections:
   - block: people
     content:
-      title: Meet the Team
+      title: 팀원들을 만나보세요
       # Choose which groups/teams of users to display.
       #   Edit `user_groups` in each user's profile to add them to one or more of these groups.
       user_groups:

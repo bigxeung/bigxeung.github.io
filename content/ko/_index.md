@@ -8,24 +8,24 @@ sections:
   - block: hero
     content:
       title: |
-        Wowchemy
-        Research Group
+        김승현
+        개인 웹사이트
       image:
         filename: welcome.jpg
       text: |
         <br>
         
-        The **Wowchemy Research Group** has been a center of excellence for Artificial Intelligence research, teaching, and practice since its founding in 2016.
+        **김승현의 개인 연구 웹사이트**에 오신 것을 환영합니다. 인공지능 연구, 교육 및 실습의 우수성을 추구합니다.
 
   - block: about.biography
     id: about
     content:
-      title: Biography
+      title: 소개
       username: bigxeung
 
   - block: collection
     content:
-      title: Latest News
+      title: 최신 소식
       subtitle:
       text:
       count: 5
@@ -44,7 +44,7 @@ sections:
 
   - block: collection
     content:
-      title: Latest Preprints
+      title: 최신 논문
       text: ""
       count: 5
       filters:
@@ -58,17 +58,17 @@ sections:
   - block: contact
     id: contact
     content:
-      title: Contact
+      title: 연락처
       subtitle:
-      text: 'My contact details are below.'
+      text: '아래에서 연락처 정보를 확인하세요.'
       email: bigxeung@gmail.com
       coordinates:
         latitude: '35.846906'
         longitude: '127.129432'
-      directions: Enter Building 7, Room 301
+      directions: 공과대학 7호관, 301호
       contact_links:
         - icon: comments
           icon_pack: fas
-          name: Discuss on Forum
+          name: 포럼에서 토론하기
           link: 'https://github.com/bigxeung/bigxeung.github.io/discussions'
 ---
