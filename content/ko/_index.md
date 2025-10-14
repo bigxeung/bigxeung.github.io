@@ -8,14 +8,13 @@ sections:
   - block: hero
     content:
       title: |
-        김승현
-        개인 웹사이트
+        빅승의 작업실
       image:
         filename: welcome.jpg
       text: |
         <br>
         
-        **김승현의 개인 연구 웹사이트**에 오신 것을 환영합니다. 인공지능 연구, 교육 및 실습의 우수성을 추구합니다.
+        **빅승의 작업실**에 오신 것을 환영합니다. 프로듀싱과 프로그래밍을 동시에 하는 꿈을 좇는 사나이입니다.
 
   - block: about.biography
     id: about
@@ -25,7 +24,7 @@ sections:
 
   - block: collection
     content:
-      title: 최신 소식
+      title: 프로듀싱/프로그래밍
       subtitle:
       text:
       count: 5
@@ -60,12 +59,12 @@ sections:
     content:
       title: 연락처
       subtitle:
-      text: '아래에서 연락처 정보를 확인하세요.'
+      text: 'ig/tg : @bigxeung'
       email: bigxeung@gmail.com
       coordinates:
         latitude: '35.846906'
         longitude: '127.129432'
-      directions: 공과대학 7호관, 301호
+      directions: 전북대학교 공과대학 7호관
       contact_links:
         - icon: comments
           icon_pack: fas
