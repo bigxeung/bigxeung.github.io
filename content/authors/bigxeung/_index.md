@@ -2,6 +2,10 @@
 # Display name
 title: 김승현
 
+# Full Name (for SEO)
+first_name: Seunghyun
+last_name: Kim
+
 # Is this the primary user of the site?
 superuser: true
 
