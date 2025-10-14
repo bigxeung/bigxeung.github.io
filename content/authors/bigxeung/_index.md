@@ -30,6 +30,9 @@ social:
 # Highlight the author in author lists? (true/false)
 highlight_name: true
 
+user_groups:
+  - Researchers
+
 # Enter email to display Gravatar (if Gravatar enabled in Config)
 email: 'bigxeung@gmail.com'
 ---
