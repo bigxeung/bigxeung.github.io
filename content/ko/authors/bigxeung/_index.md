@@ -37,6 +37,12 @@ social:
   - icon: telegram
     icon_pack: fab
     link: 'https://t.me/bigxeungloops'
+  - icon: envelope
+    icon_pack: fas
+    link: 'mailto:bigxeung@gmail.com'
+  - icon: soundcloud
+    icon_pack: fab
+    link: 'https://soundcloud.com/bigxeung'
 
 # Highlight the author in author lists? (true/false)
 highlight_name: true
