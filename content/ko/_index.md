@@ -7,13 +7,14 @@ type: landing
 sections:
   - block: hero
     content:
-          title: |
-            빅승의 작업실
-          image:
-            filename: welcome.jpg
-            filters:
-              brightness: 0.7
-          text: |        <br>
+      title: |
+        빅승의 작업실
+      image:
+        filename: welcome.jpg
+        filters:
+          brightness: 0.7
+      text: |
+        <br>
         
         **빅승의 작업실**에 오신 것을 환영합니다. 프로듀싱과 프로그래밍을 동시에 하는 꿈을 좇는 사나이입니다.
 
