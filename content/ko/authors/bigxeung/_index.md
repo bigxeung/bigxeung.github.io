@@ -25,6 +25,9 @@ education:
 
 # Social/Academic Networking
 social:
+  - icon: cv
+    icon_pack: ai
+    link: uploads/resume.pdf
   - icon: github
     icon_pack: fab
     link: 'https://github.com/bigxeung'
