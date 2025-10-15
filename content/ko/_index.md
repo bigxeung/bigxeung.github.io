@@ -84,7 +84,7 @@ sections:
       order: desc
       page_type: post
     design:
-      view: card
+      view: simple-title
       columns: '1'
 
   - block: collection

@@ -23,8 +23,8 @@
 
 - task_id: #11
   description: Custom View 제작 (Create Custom View)
-  status: Not Started
-  notes: 'layouts' 폴더에 커스텀 HTML 파일 제작이 필요합니다.
+  status: Done
+  notes: 'simple-title.html'과 'title-and-summary.html' 뷰를 생성하고, 메인 페이지에 'simple-title'을 적용함.
 
 - task_id: #31
   description: 메뉴 대표 이미지 설정 (Set featured images for menus)
