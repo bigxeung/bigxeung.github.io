@@ -9,6 +9,7 @@ sections:
       title: MP3s
       text: Full-length songs.
       filters:
+        page_type: 'page'
         category: 'MP3'
     design:
       view: compact
@@ -17,6 +18,7 @@ sections:
       title: Loops
       text: Shorter loops and ideas.
       filters:
+        page_type: 'page'
         category: 'Loop'
     design:
       view: compact
