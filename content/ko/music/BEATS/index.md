@@ -1,7 +1,7 @@
 ---
-title: "My First Song"
+title: "ODYSSEY (AMBIENT, LONE) - BPM 140"
 date: 2025-10-15
 categories: ["MP3"]
 ---
 
-This is a description for my first song.
+{{< audio src="(AMBIENT , LONE) - ODYSSEY BPM 140 - BIGXEUNG.mp3" >}}
