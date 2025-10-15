@@ -1,9 +1,14 @@
-// Make page header alignment consistent with widget page header alignment
-.universal-wrapper h1 {
-  text-align: center;
+/* Custom button style */
+.btn-primary {
+  /* Add a smooth transition effect */
+  transition: all 0.3s ease-in-out;
 }
 
-// Center the CTA shortcode button
-.cta-group {
-  justify-content: center;
+/* Custom button hover effect */
+.btn-primary:hover {
+  background-color: #0056b3; /* A darker blue for example */
+  color: #ffffff;
+  border-color: #004085;
+  /* Add a slight lift effect */
+  transform: translateY(-2px);
 }
