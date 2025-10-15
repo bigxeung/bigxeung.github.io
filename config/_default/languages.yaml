@@ -20,8 +20,8 @@ ko:
       - name: 구성원
         url: people
         weight: 30
-      - name: 이벤트
-        url: event
+      - name: 음악
+        url: music
         weight: 40
       - name: 연구실적
         url: publication

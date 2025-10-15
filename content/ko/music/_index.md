@@ -1,5 +1,5 @@
 ---
-title: 최근 & 예정된 이벤트
+title: 음악
 
 # Listing view
 view: compact
