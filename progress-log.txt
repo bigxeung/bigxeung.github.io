@@ -1,0 +1,49 @@
+# Gemini Task Log
+
+## Instructions
+- 이 파일은 다음 세션에서 Gemini 어시스턴트가 컨텍스트를 파악하기 위한 로그입니다.
+- Status: Not Started, In Progress, Done, Paused
+
+## 남은 작업 목록 (Remaining Tasks)
+
+- task_id: #1, #7, #33
+  description: 프로젝트 및 게시물 콘텐츠 추가 (Add project/post content)
+  status: Paused
+  notes: 포트폴리오에 표시할 프로젝트(3개 이상) 및 게시물이 없습니다. 사용자가 보류했습니다.
+
+- task_id: #4, #5
+  description: '경력' 정보 추가 (Add 'Experience' to profile)
+  status: Not Started
+  notes: 자기소개에 '경력(Experience)' 항목 추가가 필요합니다.
+
+- task_id: #16
+  description: 연락처 정보 수정 (Update contact info)
+  status: Not Started
+  notes: 연락처 페이지가 아직 샘플 데이터입니다.
+
+- task_id: #11
+  description: Custom View 제작 (Create Custom View)
+  status: Not Started
+  notes: 'layouts' 폴더에 커스텀 HTML 파일 제작이 필요합니다.
+
+- task_id: #31
+  description: 메뉴 대표 이미지 설정 (Set featured images for menus)
+  status: Not Started
+  notes: 'post', 'music' 등 메뉴 페이지 상단에 대표 이미지 설정이 필요합니다.
+
+- task_id: #20
+  description: 서브 메뉴 구성 (Configure sub-menus)
+  status: Paused
+  notes: 사용자가 헤더 수정 시 함께 진행하기로 보류했습니다.
+
+- task_id: #29, #후5
+  description: Commit 개수 달성 (Reach commit goals)
+  status: In Progress
+  notes: 현재 약 30개. 목표는 50개, 150개입니다.
+
+## 해결되지 않은 문제 (Unresolved Issues)
+
+- issue_id: music_tab_visibility
+  description: 음악 탭 목록 표시 오류 (Music tab list visibility error)
+  status: Paused
+  notes: 사용자가 해결 불가능으로 커밋 후 보류했습니다.
