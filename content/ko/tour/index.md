@@ -1,5 +1,5 @@
 ---
-title: Tour
+title: 둘러보기
 date: 2022-10-24
 
 type: landing
@@ -8,8 +8,8 @@ sections:
   - block: slider
     content:
       slides:
-      - title: 👋 Welcome to the group
-        content: Take a look at what we're working on...
+      - title: 👋 그룹에 오신 것을 환영합니다
+        content: 우리가 무엇을 하고 있는지 살펴보세요...
         align: center
         background:
           image:
@@ -18,8 +18,8 @@ sections:
               brightness: 0.7
           position: right
           color: '#666'
-      - title: Lunch & Learn ☕️
-        content: 'Share your knowledge with the group and explore exciting new topics together!'
+      - title: 런치 & 런 ☕️
+        content: '그룹과 지식을 공유하고 흥미로운 새 주제를 함께 탐색하세요!'
         align: left
         background:
           image:
@@ -28,8 +28,8 @@ sections:
               brightness: 0.7
           position: center
           color: '#555'
-      - title: World-Class Semiconductor Lab
-        content: 'Just opened last month!'
+      - title: 세계적 수준의 반도체 연구실
+        content: '지난달에 막 문을 열었습니다!'
         align: right
         background:
           image:
@@ -41,7 +41,7 @@ sections:
         link:
           icon: graduation-cap
           icon_pack: fas
-          text: Join Us
+          text: 함께하기
           url: ../contact/
     design:
       # Slide height is automatic unless you force a specific height (e.g. '400px')

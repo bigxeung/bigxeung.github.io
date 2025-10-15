@@ -10,23 +10,20 @@ last_name: Kim
 superuser: true
 
 # Role/position
-role: producer/programmer
+role: 프로듀서/프로그래머
 
 # Organizations/Affiliations
 organizations:
-  - name: Jeonbuk National University
+  - name: 전북대학교
     url: 'https://www.jbnu.ac.kr/'
 
 education:
   courses:
-    - course: BSc in Computer Science
-      institution: Jeonbuk National University
+    - course: 컴퓨터공학 학사
+      institution: 전북대학교
       year: 2024
 
 # Social/Academic Networking
-# For available icons, see: https://docs.hugoblox.com/getting-started/page-builder/#icons
-#   For an email link, use "fas" icon pack, "envelope" icon, and a link in the
-#   form "mailto:your-email@example.com" or "#contact" for contact widget.
 social:
   - icon: github
     icon_pack: fab
@@ -48,4 +45,4 @@ user_groups:
 email: 'bigxeung@gmail.com'
 ---
 
-Producer/Programmer from Korea
+한국에서 활동하는 프로듀서/프로그래머입니다.
