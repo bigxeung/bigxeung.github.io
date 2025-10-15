@@ -59,8 +59,8 @@ sections:
     design:
       slide_height: ''
       is_fullscreen: false
-      loop: false
-      interval: 2000
+      loop: true
+      interval: 7000
 
   - block: about.biography
     id: about
