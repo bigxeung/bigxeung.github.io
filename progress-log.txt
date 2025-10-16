@@ -39,11 +39,11 @@
 - task_id: #29, #후5
   description: Commit 개수 달성 (Reach commit goals)
   status: In Progress
-  notes: 현재 약 30개. 목표는 50개, 150개입니다.
+  notes: 현재 약 31개. 목표는 50개, 150개입니다.
 
 ## 해결되지 않은 문제 (Unresolved Issues)
 
 - issue_id: music_tab_visibility
   description: 음악 탭 목록 표시 오류 (Music tab list visibility error)
-  status: Paused
-  notes: 사용자가 해결 불가능으로 커밋 후 보류했습니다.
+  status: Done
+  notes: 각 MP3 파일을 개별 페이지로 만드는 방식으로 콘텐츠 구조를 변경하여 해결했습니다.
