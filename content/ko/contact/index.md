@@ -10,12 +10,11 @@ sections:
       title: 연락처
       text: |-
         궁금한 점이 있으시면 언제든지 연락주세요.
-      email: test@example.org
-      phone: 888 888 88 88
+      email: bigxeung@gmail.com
       address:
-        street: 567 Baekje-daero, Deokjin-gu
-        city: Jeonju-si
-        region: Jeollabuk-do
+        street: 567 백제대로
+        city: 전주시
+        region: 전라북도
         postcode: '54896'
         country: 대한민국
         country_code: KR
@@ -24,7 +23,8 @@ sections:
         longitude: '127.1293'
       directions: 공과대학 7호관으로 오세요.
       office_hours:
-        - '월요일 10:00 ~ 13:00'
+        - '월요일 09:00 ~ 13:00'
+        - '화요일 12:00 ~ 14:00'
         - '수요일 09:00 ~ 10:00'
       appointment_url: 'https://calendly.com'
       #contact_links:
