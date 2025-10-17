@@ -39,12 +39,12 @@
 - task_id: #29, #후5
   description: Commit 개수 달성 (Reach commit goals)
   status: In Progress
-  notes: 현재 약 33개. 목표는 50개, 150개입니다.
+  notes: 현재 약 34개. 목표는 50개, 150개입니다.
 
-- issue_id: music_tab_reimplementation
-  description: WaveSurfer.js 플레이어를 사용한 음악 탭 재구성 (Rebuild music tab with WaveSurfer.js player)
+- issue_id: lp_player_implementation
+  description: LP판 디자인의 새로운 음악 플레이어 구현 (Implement new music player with LP design)
   status: Done
-  notes: 페이지 번들 구조와 커스텀 shortcode를 사용하여 구현함. (Implemented using page bundle structure and custom shortcode.)
+  notes: 사용자가 제공한 가이드에 따라 static 폴더 기반의 플레이어를 구현함. (Implemented a player based on the static folder according to the user's guide.)
 
 ## 해결되지 않은 문제 (Unresolved Issues)
 
