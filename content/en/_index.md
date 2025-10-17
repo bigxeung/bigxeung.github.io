@@ -5,35 +5,21 @@ date: 2022-10-24
 type: landing
 
 sections:
-  - block: hero
-    content:
-      title: |
-        Wowchemy
-        Research Group
-      image:
-        filename: welcome.jpg
-        filters:
-          brightness: 0.7
-      text: |
-        <br>
-        
-        The **Wowchemy Research Group** has been a center of excellence for Artificial Intelligence research, teaching, and practice since its founding in 2016.
-
   - block: slider
     content:
       slides:
-      - title: 👋 Welcome to the Group
-        content: Take a look at what we're doing...
+      - title: Welcome to BIGXEUNG's Workshop
+        content: Where music and code meet.
         align: center
         background:
           image:
-            filename: coders.jpg
+            filename: welcome.jpg
             filters:
               brightness: 0.7
-          position: right
+          position: center
           color: '#666'
-      - title: Lunch & Learn ☕️
-        content: 'Share your knowledge with the group and explore exciting new topics together!'
+      - title: PRODUCER
+        content: 'Creating new beats that move the world.'
         align: left
         background:
           image:
@@ -42,25 +28,23 @@ sections:
               brightness: 0.7
           position: center
           color: '#555'
-      - title: World-Class Semiconductor Lab
-        content: 'Just opened last month!'
+      - title: PROGRAMMER
+        content: 'Bringing ideas to life with logical code.'
         align: right
         background:
           image:
-            filename: welcome.jpg
+            filename: coders.jpg
             filters:
               brightness: 0.5
           position: center
           color: '#333'
-        link:
-          icon: graduation-cap
-          icon_pack: fas
-          text: Join Us
-          url: ../contact/
     design:
+      # Slide height is automatic unless you force a specific height (e.g. '400px')
       slide_height: ''
-      is_fullscreen: false
+      is_fullscreen: true
+      # Automatically transition through slides?
       loop: true
+      # Duration of transition between slides (in ms)
       interval: 7000
 
   - block: about.biography
