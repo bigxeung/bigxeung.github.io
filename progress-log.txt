@@ -39,17 +39,17 @@
 - task_id: #29, #후5
   description: Commit 개수 달성 (Reach commit goals)
   status: In Progress
-  notes: 현재 약 35개. 목표는 50개, 150개입니다.
+  notes: 현재 약 36개. 목표는 50개, 150개입니다.
 
 - issue_id: lp_player_implementation
   description: LP판 디자인의 새로운 음악 플레이어 구현 (Implement new music player with LP design)
   status: Done
   notes: 사용자가 제공한 가이드에 따라 static 폴더 기반의 플레이어를 구현함. (Implemented a player based on the static folder according to the user's guide.)
 
-- issue_id: fix_music_menu_link
-  description: 음악 탭 404 오류 해결 (Fix music tab 404 error)
+- issue_id: fix_music_menu_link_404
+  description: 음악 탭 404 오류 재수정 (Re-fix music tab 404 error)
   status: Done
-  notes: 메뉴 설정 파일에서 음악 탭의 URL을 새로운 플레이어 페이지 주소로 수정함. (Updated the URL for the music tab in the menu configuration file to point to the new player page.)
+  notes: 다국어 설정으로 인한 경로 문제를 해결하기 위해 메뉴 URL을 pageRef로 변경함. (Changed menu URL to pageRef to resolve path issues due to multilingual setup.)
 
 ## 해결되지 않은 문제 (Unresolved Issues)
 
