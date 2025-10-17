@@ -39,7 +39,7 @@
 - task_id: #29, #후5
   description: Commit 개수 달성 (Reach commit goals)
   status: In Progress
-  notes: 현재 약 38개. 목표는 50개, 150개입니다.
+  notes: 현재 약 39개. 목표는 50개, 150개입니다.
 
 - issue_id: lp_player_implementation
   description: LP판 디자인의 새로운 음악 플레이어 구현 (Implement new music player with LP design)
@@ -60,6 +60,11 @@
   description: 영어/한국어 콘텐츠 동기화 (contact, tour) (Sync English/Korean content)
   status: Done
   notes: contact와 tour 페이지의 영어 버전 내용을 한국어 버전을 기반으로 번역하여 동기화함. (Translated and synchronized the English versions of the contact and tour pages based on the Korean versions.)
+
+- issue_id: fix_slider_autoscroll
+  description: 모든 슬라이더 7초 자동 전환 설정 (Set all sliders to auto-scroll every 7s)
+  status: Done
+  notes: Tour 페이지들의 슬라이더 loop 및 interval 설정을 수정함. (Corrected the loop and interval settings for the sliders on the Tour pages.)
 
 ## 해결되지 않은 문제 (Unresolved Issues)
 
