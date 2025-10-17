@@ -9,7 +9,7 @@ sections:
     content:
       title: Contact
       text: |-
-        Feel free to contact me if you have any questions.
+        <div style="text-align: justify;">Feel free to contact me if you have any questions.</div>
       email: bigxeung@gmail.com
       address:
         street: 567 Baekje-daero

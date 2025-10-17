@@ -48,4 +48,6 @@ user_groups:
 email: 'bigxeung@gmail.com'
 ---
 
+<div style="text-align: justify;">
 Producer/Programmer from Korea, I am currently working on both music production and programming, and I am passionately pursuing my dream.
+</div>

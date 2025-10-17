@@ -9,7 +9,7 @@ sections:
     content:
       title: 연락처
       text: |-
-        궁금한 점이 있으시면 언제든지 연락주세요.
+        <div style="text-align: justify;">궁금한 점이 있으시면 언제든지 연락주세요.</div>
       email: bigxeung@gmail.com
       address:
         street: 567 백제대로

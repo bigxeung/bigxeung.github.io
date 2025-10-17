@@ -52,6 +52,12 @@ sections:
     content:
       title: 소개
       username: bigxeung
+      text: |
+        <div style="text-align: justify;">
+        <br>
+        
+        **빅승의 작업실**에 오신 것을 환영합니다. 프로듀싱과 프로그래밍을 동시에 하는 꿈을 좇는 사나이입니다.
+        </div>
 
   - block: collection
     content:
