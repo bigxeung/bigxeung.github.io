@@ -39,7 +39,7 @@
 - task_id: #29, #후5
   description: Commit 개수 달성 (Reach commit goals)
   status: In Progress
-  notes: 현재 약 43개. 목표는 50개, 150개입니다.
+  notes: 현재 약 44개. 목표는 50개, 150개입니다.
 
 - issue_id: lp_player_implementation
   description: LP판 디자인의 새로운 음악 플레이어 구현 (Implement new music player with LP design)
@@ -85,6 +85,11 @@
   description: 텍스트 양쪽 정렬 적용 (Apply text justification)
   status: Done
   notes: 사이트 내 4개의 문단에 text-align: justify 스타일을 적용함. (Applied text-align: justify style to 4 paragraphs on the site.)
+
+- issue_id: update_favicon
+  description: 홈페이지 title 로고(파비콘) 변경 (Change homepage title logo (favicon))
+  status: Done
+  notes: assets/media/icon.png 파일을 추가하여 파비콘을 변경함. (Changed the favicon by adding the assets/media/icon.png file.)
 
 ## 해결되지 않은 문제 (Unresolved Issues)
 
