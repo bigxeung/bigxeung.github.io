@@ -39,7 +39,7 @@
 - task_id: #29, #후5
   description: Commit 개수 달성 (Reach commit goals)
   status: In Progress
-  notes: 현재 약 41개. 목표는 50개, 150개입니다.
+  notes: 현재 약 42개. 목표는 50개, 150개입니다.
 
 - issue_id: lp_player_implementation
   description: LP판 디자인의 새로운 음악 플레이어 구현 (Implement new music player with LP design)
@@ -75,6 +75,11 @@
   description: 음악 섹션 재구현 및 서브메뉴 생성 (Re-implement music section and create sub-menus)
   status: Done
   notes: 페이지 번들, 커스텀 레이아웃, pageRef를 사용한 가장 안정적인 방식으로 BEATS/LOOPS 서브메뉴 및 자동 재생 목록 플레이어를 구현함. (Implemented BEATS/LOOPS sub-menus and an automatic playlist player in the most stable way using page bundles, custom layouts, and pageRef.)
+
+- issue_id: update_social_share_image
+  description: 홈페이지 대표 이미지(소셜 공유) 변경 (Change site's representative image (social share))
+  status: Done
+  notes: avatar.jpg를 복사하여 params.yaml의 share.image로 설정함. (Copied avatar.jpg and set it as share.image in params.yaml.)
 
 ## 해결되지 않은 문제 (Unresolved Issues)
 
