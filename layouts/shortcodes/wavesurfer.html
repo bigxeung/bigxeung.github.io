@@ -1,0 +1,30 @@
+{{- $src := .Get "src" -}}
+{{- if $src -}}
+  {{- $audioResource := .Page.Resources.GetMatch $src -}}
+  {{- if $audioResource -}}
+    {{- $id := printf "waveform-%d" .Ordinal -}}
+    <div id="{{ $id }}" class="wavesurfer-container"></div>
+
+    <script type="module">
+      import WaveSurfer from 'https://cdn.jsdelivr.net/npm/wavesurfer.js@7/dist/wavesurfer.esm.js'
+
+      const wavesurfer = WaveSurfer.create({
+        container: '#{{ $id }}',
+        waveColor: '#4F4A85',
+        progressColor: '#383351',
+        url: '{{ $audioResource.RelPermalink }}',
+        height: 90,
+        barWidth: 2,
+        barGap: 1
+      })
+
+      wavesurfer.on('interaction', () => {
+        wavesurfer.play()
+      })
+    </script>
+  {{- else -}}
+    <p style="color: red;">오디오 파일 '''{{ $src }}'''을 찾을 수 없습니다. 페이지 번들 안에 파일이 있는지 확인하세요.</p>
+  {{- end -}}
+{{- else -}}
+  <p style="color: red;">wavesurfer shortcode에 '''src''' 파라미터가 필요합니다.</p>
+{{- end -}}
