@@ -39,7 +39,7 @@
 - task_id: #29, #후5
   description: Commit 개수 달성 (Reach commit goals)
   status: In Progress
-  notes: 현재 약 36개. 목표는 50개, 150개입니다.
+  notes: 현재 약 37개. 목표는 50개, 150개입니다.
 
 - issue_id: lp_player_implementation
   description: LP판 디자인의 새로운 음악 플레이어 구현 (Implement new music player with LP design)
@@ -50,6 +50,11 @@
   description: 음악 탭 404 오류 재수정 (Re-fix music tab 404 error)
   status: Done
   notes: 다국어 설정으로 인한 경로 문제를 해결하기 위해 메뉴 URL을 pageRef로 변경함. (Changed menu URL to pageRef to resolve path issues due to multilingual setup.)
+
+- issue_id: sync_en_ko_homepage
+  description: 영어/한국어 메인 페이지 동기화 (Sync English/Korean main pages)
+  status: Done
+  notes: 한국어 페이지 기준으로 영어 페이지에 슬라이더를 추가하고 일부 디자인을 통일함. (Added slider and unified some designs on the English page based on the Korean page.)
 
 ## 해결되지 않은 문제 (Unresolved Issues)
 
