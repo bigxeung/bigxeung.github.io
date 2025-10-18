@@ -1,7 +1,4 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>BEATS</title>
+{{ define "main" }}
 <style>
     body {
         font-family: Arial, sans-serif;
@@ -148,11 +145,9 @@
         display: block;
     }
 </style>
-</head>
-<body>
 
 <div class="player-container">
-    <h1>BEATS</h1>
+    <h1>{{ .Title }}</h1>
 
     <div class="lp-container">
         <img src="/images/lp_record.png" alt="LP Record" class="lp-image" id="lpImage">
@@ -186,17 +181,20 @@
     let currentSongIndex = 0;
     let isPlaying = false;
 
-    const audioFiles = [
-        "(AMBIENT , LONE) - ODYSSEY BPM 140 - BIGXEUNG.mp3",
-        "(DARK , JERK) - DIMINISH BPM160 - BIGXEUNG.mp3",
-        "(MELODIC , KEN . MP3) - STEADY BPM152 - BIGXEUNG.mp3",
-        "(MELODIC , KEN) - REMOTE CONTROLLER BPM156 - BIGXEUNG.mp3",
-        "(MELODIC , SOUL) - AIRY BPM 82 - BIGXEUNG.mp3"
+    const audioFileNames = [
+        {{ range .Resources.Match "*.mp3" }}
+            "{{ .Name }}",
+        {{ end }}
+    ];
+    const audioFileUrls = [
+        {{ range .Resources.Match "*.mp3" }}
+            "{{ .RelPermalink }}",
+        {{ end }}
     ];
 
     function createPlaylist() {
         playlistElement.innerHTML = '';
-        audioFiles.forEach((file, index) => {
+        audioFileNames.forEach((file, index) => {
             const listItem = document.createElement('li');
             listItem.classList.add('playlist-item');
             listItem.dataset.index = index;
@@ -207,11 +205,10 @@
     }
 
     function playSong(index) {
-        if (index >= 0 && index < audioFiles.length) {
+        if (index >= 0 && index < audioFileUrls.length) {
             currentSongIndex = index;
-            const songUrl = audioFiles[currentSongIndex];
-            audioPlayer.src = songUrl;
-            currentSongDisplay.textContent = "재생 중: " + audioFiles[currentSongIndex].replace('.mp3', '');
+            audioPlayer.src = audioFileUrls[currentSongIndex];
+            currentSongDisplay.textContent = "재생 중: " + audioFileNames[currentSongIndex].replace('.mp3', '');
 
             audioPlayer.play();
             isPlaying = true;
@@ -239,12 +236,12 @@
     }
 
     function playNext() {
-        currentSongIndex = (currentSongIndex + 1) % audioFiles.length;
+        currentSongIndex = (currentSongIndex + 1) % audioFileUrls.length;
         playSong(currentSongIndex);
     }
 
     function playPrev() {
-        currentSongIndex = (currentSongIndex - 1 + audioFiles.length) % audioFiles.length;
+        currentSongIndex = (currentSongIndex - 1 + audioFileUrls.length) % audioFileUrls.length;
         playSong(currentSongIndex);
     }
 
@@ -266,18 +263,16 @@
     audioPlayer.addEventListener('ended', playNext);
 
     document.addEventListener('DOMContentLoaded', () => {
-        if (audioFiles.length === 0) {
+        if (audioFileUrls.length === 0) {
             currentSongDisplay.textContent = "오디오 파일이 없습니다.";
             playPauseBtn.disabled = true;
             prevBtn.disabled = true;
             nextBtn.disabled = true;
         } else {
             createPlaylist();
-            currentSongDisplay.textContent = "재생 대기: " + audioFiles[currentSongIndex].replace('.mp3', '');
+            currentSongDisplay.textContent = "재생 대기: " + audioFileNames[currentSongIndex].replace('.mp3', '');
             updatePlaylistActiveState();
         }
     });
 </script>
-
-</body>
-</html>
+{{ end }}
