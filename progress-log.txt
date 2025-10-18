@@ -99,7 +99,7 @@
 - issue_id: fix_lp_player_alignment
   description: LP 플레이어 중앙 정렬 수정 (Fix LP player center alignment)
   status: Done
-  notes: Flexbox를 사용하여 플레이어 내부 컴포넌트들의 중앙 정렬을 수정함. (Used Flexbox to fix center alignment of components inside the player.)
+  notes: CSS 셀렉터를 body에서 main으로 변경하여 플레이어의 중앙 정렬을 최종 수정함. (Changed CSS selector from body to main to finalize player's center alignment.)
 
 ## 해결되지 않은 문제 (Unresolved Issues)
 
