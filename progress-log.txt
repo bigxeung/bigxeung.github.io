@@ -39,7 +39,7 @@
 - task_id: #29, #후5
   description: Commit 개수 달성 (Reach commit goals)
   status: In Progress
-  notes: 현재 약 49개. 목표는 50개, 150개입니다.
+  notes: 현재 약 50개. 목표는 50개, 150개입니다.
 
 - issue_id: lp_player_implementation
   description: LP판 디자인의 새로운 음악 플레이어 구현 (Implement new music player with LP design)
@@ -95,6 +95,11 @@
   description: LP 음악 플레이어 UI 개선 (Improve LP music player UI)
   status: Done
   notes: 플레이어 크기를 키우고, 색상 테마를 파란색으로 변경하는 등 전반적인 CSS 스타일을 개선함. (Improved overall CSS style, including increasing player size and changing the color theme to blue.)
+
+- issue_id: fix_lp_player_alignment
+  description: LP 플레이어 중앙 정렬 수정 (Fix LP player center alignment)
+  status: Done
+  notes: Flexbox를 사용하여 플레이어 내부 컴포넌트들의 중앙 정렬을 수정함. (Used Flexbox to fix center alignment of components inside the player.)
 
 ## 해결되지 않은 문제 (Unresolved Issues)
 
