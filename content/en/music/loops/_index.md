@@ -1,9 +1,8 @@
 ---
 title: LOOPS
 type: music-section
+weight: 2
 menu:
   main:
-    name: LOOPS
     parent: music
-    weight: 2
 ---

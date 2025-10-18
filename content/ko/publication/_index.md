@@ -1,9 +1,8 @@
 ---
-title: 출판물
+title: 연구실적
+weight: 50
 menu:
   main:
-    name: 연구실적
-    weight: 50
 
 
 # Listing view

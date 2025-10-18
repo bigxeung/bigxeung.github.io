@@ -1,9 +1,8 @@
 ---
-title: Latest News
+title: News
+weight: 20
 menu:
   main:
-    name: News
-    weight: 20
 
 
 # Listing view

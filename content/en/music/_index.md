@@ -1,11 +1,10 @@
 ---
 title: Music
 type: page
+weight: 40
 menu:
   main:
-    name: Music
     identifier: music
-    weight: 40
 ---
 
 # Music Library

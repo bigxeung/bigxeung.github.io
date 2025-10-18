@@ -1,9 +1,8 @@
 ---
-title: 최신 뉴스
+title: 소식
+weight: 20
 menu:
   main:
-    name: 소식
-    weight: 20
 
 
 # Listing view

@@ -1,9 +1,8 @@
 ---
 title: BEATS
 type: music-section
+weight: 1
 menu:
   main:
-    name: BEATS
     parent: music
-    weight: 1
 ---

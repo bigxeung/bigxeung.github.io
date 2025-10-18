@@ -2,10 +2,9 @@
 title: People
 date: 2022-10-24
 type: landing
+weight: 30
 menu:
   main:
-    name: People
-    weight: 30
 
 
 sections:

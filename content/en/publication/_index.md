@@ -1,9 +1,8 @@
 ---
 title: Publications
+weight: 50
 menu:
   main:
-    name: Publications
-    weight: 50
 
 
 # Listing view
