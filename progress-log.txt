@@ -104,7 +104,7 @@
 - issue_id: fix_header_visibility
   description: 음악 페이지 헤더 미표시 오류 수정 (Fix header not showing on music pages)
   status: Done
-  notes: 레이아웃 CSS가 테마와 충돌하는 문제를 해결하기 위해 스타일을 별도 div로 분리함. (Isolated styles into a separate div to resolve conflict with the theme's header.)
+  notes: 레이아웃 CSS가 테마와 충돌하는 문제를 해결하기 위해 스타일을 별도 div로 분리하여 최종 수정함. (Finally fixed by isolating styles into a separate div to resolve conflict with the theme's header.)
 
 ## 해결되지 않은 문제 (Unresolved Issues)
 
