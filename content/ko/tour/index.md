@@ -1,8 +1,12 @@
 ---
 title: 둘러보기
 date: 2022-10-24
-
 type: landing
+menu:
+  main:
+    name: 둘러보기
+    weight: 10
+
 
 sections:
   - block: slider

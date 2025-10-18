@@ -1,5 +1,10 @@
 ---
 title: Latest News
+menu:
+  main:
+    name: News
+    weight: 20
+
 
 # Listing view
 view: compact

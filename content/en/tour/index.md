@@ -1,8 +1,12 @@
 ---
 title: Tour
 date: 2022-10-24
-
 type: landing
+menu:
+  main:
+    name: Tour
+    weight: 10
+
 
 sections:
   - block: slider

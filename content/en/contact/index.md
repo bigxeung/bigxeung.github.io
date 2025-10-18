@@ -1,8 +1,12 @@
 ---
 title: Contact
 date: 2022-10-24
-
 type: landing
+menu:
+  main:
+    name: Contact
+    weight: 60
+
 
 sections:
   - block: contact

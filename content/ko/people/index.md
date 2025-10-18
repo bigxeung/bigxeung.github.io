@@ -1,8 +1,12 @@
 ---
 title: 구성원
 date: 2022-10-24
-
 type: landing
+menu:
+  main:
+    name: 구성원
+    weight: 30
+
 
 sections:
   - block: people

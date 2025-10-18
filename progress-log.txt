@@ -34,12 +34,12 @@
 - task_id: #20
   description: 서브 메뉴 구성 (Configure sub-menus)
   status: Done
-  notes: 서브탭이 항상 표시되도록 부모 메뉴의 링크를 제거하는 방식 시도. (Attempting to make sub-tabs always visible by removing the parent menu's link.)
+  notes: 중앙 메뉴 설정 대신, 각 콘텐츠 파일에서 메뉴를 정의하는 '섹션 메뉴' 방식으로 재구성하여 서브탭 문제를 최종 해결함. (Instead of a central menu configuration, finally resolved the sub-tab issue by restructuring to a 'Section Menu' method where each content file defines the menu.)
 
 - task_id: #29, #후5
   description: Commit 개수 달성 (Reach commit goals)
   status: In Progress
-  notes: 현재 약 50개. 목표는 50개, 150개입니다.
+  notes: 현재 약 54개. 목표는 50개, 150개입니다.
 
 - issue_id: lp_player_implementation
   description: LP판 디자인의 새로운 음악 플레이어 구현 (Implement new music player with LP design)

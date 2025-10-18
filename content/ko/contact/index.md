@@ -1,8 +1,12 @@
 ---
 title: 연락처
 date: 2022-10-24
-
 type: landing
+menu:
+  main:
+    name: 연락처
+    weight: 60
+
 
 sections:
   - block: contact

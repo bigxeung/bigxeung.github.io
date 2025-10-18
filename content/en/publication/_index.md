@@ -1,5 +1,10 @@
 ---
 title: Publications
+menu:
+  main:
+    name: Publications
+    weight: 50
+
 
 # Listing view
 view: citation

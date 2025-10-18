@@ -9,31 +9,3 @@ ko:
   title: 김승현
   weight: 1
   contentDir: content/ko
-  menu:
-    main:
-      - name: 투어
-        url: tour
-        weight: 10
-      - name: 소식
-        url: post
-        weight: 20
-      - name: 구성원
-        url: people
-        weight: 30
-      - name: 음악
-        identifier: music
-        weight: 40
-      - name: BEATS
-        parent: music
-        pageRef: /music/beats
-        weight: 1
-      - name: LOOPS
-        parent: music
-        pageRef: /music/loops
-        weight: 2
-      - name: 연구실적
-        url: publication
-        weight: 50
-      - name: 연락처
-        url: contact
-        weight: 60
