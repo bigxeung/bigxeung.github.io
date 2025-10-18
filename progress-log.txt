@@ -39,7 +39,7 @@
 - task_id: #29, #후5
   description: Commit 개수 달성 (Reach commit goals)
   status: In Progress
-  notes: 현재 약 48개. 목표는 50개, 150개입니다.
+  notes: 현재 약 49개. 목표는 50개, 150개입니다.
 
 - issue_id: lp_player_implementation
   description: LP판 디자인의 새로운 음악 플레이어 구현 (Implement new music player with LP design)
@@ -74,7 +74,7 @@
 - issue_id: reimplement_music_final_final
   description: 음악 섹션 및 서브탭 최종 재구현 (Final re-implementation of music section and sub-tabs)
   status: Done
-  notes: 페이지 번들, 커스텀 레이아웃, pageRef를 사용하여 원했던 형태의 서브탭과 자동화된 플레이어를 구현함. (Implemented the desired sub-tab style and automated player using page bundles, a custom layout, and pageRef.)
+  notes: 페이지 번들, 커스텀 레이아웃, pageRef를 사용한 가장 안정적인 방식으로 BEATS/LOOPS 서브메뉴 및 자동 재생 목록 플레이어를 구현함. (Implemented the desired sub-tab style and automated player using page bundles, a custom layout, and pageRef.)
 
 - issue_id: update_social_share_image
   description: 홈페이지 대표 이미지(소셜 공유) 변경 (Change site's representative image (social share))
@@ -90,6 +90,11 @@
   description: 홈페이지 title 로고(파비콘) 변경 (Change homepage title logo (favicon))
   status: Done
   notes: assets/media/icon.png 파일을 추가하여 파비콘을 변경함. (Changed the favicon by adding the assets/media/icon.png file.)
+
+- issue_id: style_lp_player
+  description: LP 음악 플레이어 UI 개선 (Improve LP music player UI)
+  status: Done
+  notes: 플레이어 크기를 키우고, 색상 테마를 파란색으로 변경하는 등 전반적인 CSS 스타일을 개선함. (Improved overall CSS style, including increasing player size and changing the color theme to blue.)
 
 ## 해결되지 않은 문제 (Unresolved Issues)
 
