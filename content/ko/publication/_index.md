@@ -1,5 +1,5 @@
 ---
-title: 연구실적
+title: PDF
 weight: 50
 menu:
   main:

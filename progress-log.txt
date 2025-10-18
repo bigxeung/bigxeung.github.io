@@ -39,7 +39,7 @@
 - task_id: #29, #후5
   description: Commit 개수 달성 (Reach commit goals)
   status: In Progress
-  notes: 현재 약 55개. 목표는 50개, 150개입니다.
+  notes: 현재 약 56개. 목표는 50개, 150개입니다.
 
 - issue_id: lp_player_implementation
   description: LP판 디자인의 새로운 음악 플레이어 구현 (Implement new music player with LP design)
@@ -105,6 +105,11 @@
   description: 음악 페이지 헤더 미표시 오류 수정 (Fix header not showing on music pages)
   status: Done
   notes: 레이아웃 CSS가 테마와 충돌하는 문제를 해결하기 위해 스타일을 별도 div로 분리하여 최종 수정함. (Finally fixed by isolating styles into a separate div to resolve conflict with the theme's header.)
+
+- issue_id: rename_publication_tab
+  description: 연구실적 탭 이름 변경 (Rename Publication tab)
+  status: Done
+  notes: '연구실적' 탭의 이름을 'PDF'로 변경함. (Changed the name of the 'Publications' tab to 'PDF'.)
 
 ## 해결되지 않은 문제 (Unresolved Issues)
 
