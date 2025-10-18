@@ -15,7 +15,6 @@ main:
     weight: 30
   - name: Music
     identifier: music
-    pageRef: /music
     weight: 40
   - name: BEATS
     parent: music

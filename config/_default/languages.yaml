@@ -22,7 +22,6 @@ ko:
         weight: 30
       - name: 음악
         identifier: music
-        pageRef: /music
         weight: 40
       - name: BEATS
         parent: music
