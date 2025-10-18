@@ -1,6 +1,6 @@
 {{ define "main" }}
 <style>
-    main {
+    .music-player-wrapper {
         font-family: 'Helvetica Neue', Arial, sans-serif;
         display: flex;
         justify-content: center;
@@ -167,26 +167,28 @@
     }
 </style>
 
-<div class="player-container">
-    <h1>{{ .Title }}</h1>
+<div class="music-player-wrapper">
+    <div class="player-container">
+        <h1>{{ .Title }}</h1>
 
-    <div class="lp-container">
-        <img src="/images/lp_record.png" alt="LP Record" class="lp-image" id="lpImage">
-    </div>
+        <div class="lp-container">
+            <img src="/images/lp_record.png" alt="LP Record" class="lp-image" id="lpImage">
+        </div>
 
-    <div class="controls">
-        <button id="prevBtn">이전</button>
-        <button id="playPauseBtn">재생</button>
-        <button id="nextBtn">다음</button>
-    </div>
+        <div class="controls">
+            <button id="prevBtn">이전</button>
+            <button id="playPauseBtn">재생</button>
+            <button id="nextBtn">다음</button>
+        </div>
 
-    <audio id="audioPlayer" controls style="width: 100%; margin-top: 15px; display: none;"></audio>
-    <div id="currentSong">재생 중: 없음</div>
+        <audio id="audioPlayer" controls style="width: 100%; margin-top: 15px; display: none;"></audio>
+        <div id="currentSong">재생 중: 없음</div>
 
-    <div id="playlist-container">
-        <h3>재생 목록</h3>
-        <ul id="playlist">
-        </ul>
+        <div id="playlist-container">
+            <h3>재생 목록</h3>
+            <ul id="playlist">
+            </ul>
+        </div>
     </div>
 </div>
 
