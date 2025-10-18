@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>LOOPS</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background-color: #222;
+        color: #eee;
+        margin: 0;
+        flex-direction: column;
+    }
+
+    .player-container {
+        background-color: #333;
+        border-radius: 10px;
+        padding: 20px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+        text-align: center;
+        width: 300px;
+        position: relative;
+        overflow: hidden;
+    }
+
+    h1 {
+        color: #4CAF50;
+        margin-bottom: 20px;
+    }
+
+    .lp-container {
+        width: 200px;
+        height: 200px;
+        margin: 0 auto 20px;
+        position: relative;
+        background-color: #111;
+        border-radius: 50%;
+        border: 5px solid #000;
+        overflow: hidden;
+        box-shadow: inset 0 0 10px rgba(0,0,0,0.8);
+    }
+
+    .lp-image {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        object-fit: cover;
+        animation: rotate 10s linear infinite paused;
+    }
+
+    .lp-container::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 40px;
+        height: 40px;
+        background-color: #4CAF50;
+        border-radius: 50%;
+        border: 2px solid #fff;
+        z-index: 10;
+    }
+
+    .lp-image.playing {
+        animation-play-state: running;
+    }
+
+    @keyframes rotate {
+        from { transform: rotate(0deg); }
+        to { transform: rotate(360deg); }
+    }
+
+    .controls {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        margin-bottom: 20px;
+    }
+
+    .controls button {
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+        transition: background-color 0.3s ease;
+    }
+
+    .controls button:hover {
+        background-color: #5cb85c;
+    }
+
+    #currentSong {
+        margin-top: 15px;
+        font-size: 1.1em;
+        color: #4CAF50;
+        font-weight: bold;
+    }
+
+    #playlist-container {
+        margin-top: 20px;
+        max-height: 200px;
+        overflow-y: auto;
+        border-top: 1px solid #444;
+        padding-top: 10px;
+    }
+
+    .playlist-item {
+        padding: 8px 10px;
+        cursor: pointer;
+        text-align: left;
+        transition: background-color 0.2s ease;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .playlist-item:hover {
+        background-color: #555;
+    }
+
+    .playlist-item.active {
+        background-color: #4CAF50;
+        color: white;
+        font-weight: bold;
+    }
+
+    .playlist-item-title {
+        flex-grow: 1;
+    }
+
+    .play-indicator {
+        width: 10px;
+        height: 10px;
+        background-color: #fff;
+        border-radius: 50%;
+        margin-left: 10px;
+        display: none;
+    }
+
+    .playlist-item.active .play-indicator {
+        display: block;
+    }
+</style>
+</head>
+<body>
+
+<div class="player-container">
+    <h1>LOOPS</h1>
+
+    <div class="lp-container">
+        <img src="/images/lp_record.png" alt="LP Record" class="lp-image" id="lpImage">
+    </div>
+
+    <div class="controls">
+        <button id="prevBtn">이전</button>
+        <button id="playPauseBtn">재생</button>
+        <button id="nextBtn">다음</button>
+    </div>
+
+    <audio id="audioPlayer" controls style="width: 100%; margin-top: 15px; display: none;"></audio>
+    <div id="currentSong">재생 중: 없음</div>
+
+    <div id="playlist-container">
+        <h3>재생 목록</h3>
+        <ul id="playlist">
+        </ul>
+    </div>
+</div>
+
+<script>
+    const audioPlayer = document.getElementById('audioPlayer');
+    const playPauseBtn = document.getElementById('playPauseBtn');
+    const prevBtn = document.getElementById('prevBtn');
+    const nextBtn = document.getElementById('nextBtn');
+    const playlistElement = document.getElementById('playlist');
+    const currentSongDisplay = document.getElementById('currentSong');
+    const lpImage = document.getElementById('lpImage');
+
+    let currentSongIndex = 0;
+    let isPlaying = false;
+
+    const audioFiles = [
+        "(DARK , KEN) - GLACIER BPM 160 - BIGXEUNG.mp3",
+        "(DARK , YEAT) - EPIC GAMES BPM140 - BIGXEUNG.mp3",
+        "(MELODIC , D.SAVAGE) - DREAM TELLER BPM140 - BIGXEUNG.mp3",
+        "(MELODIC , KEN) - DRIFT BPM 155 - BIGXEUNG (1).mp3",
+        "(MELODIC) - KWIRE BPM153 - BIGXEUNG.mp3"
+    ];
+
+    function createPlaylist() {
+        playlistElement.innerHTML = '';
+        audioFiles.forEach((file, index) => {
+            const listItem = document.createElement('li');
+            listItem.classList.add('playlist-item');
+            listItem.dataset.index = index;
+            listItem.innerHTML = `<span class="playlist-item-title">${file.replace('.mp3', '')}</span><span class="play-indicator"></span>`;
+            listItem.addEventListener('click', () => playSong(index));
+            playlistElement.appendChild(listItem);
+        });
+    }
+
+    function playSong(index) {
+        if (index >= 0 && index < audioFiles.length) {
+            currentSongIndex = index;
+            const songUrl = audioFiles[currentSongIndex];
+            audioPlayer.src = songUrl;
+            currentSongDisplay.textContent = "재생 중: " + audioFiles[currentSongIndex].replace('.mp3', '');
+
+            audioPlayer.play();
+            isPlaying = true;
+            playPauseBtn.textContent = '일시정지';
+            lpImage.classList.add('playing');
+            updatePlaylistActiveState();
+        }
+    }
+
+    function togglePlayPause() {
+        if (isPlaying) {
+            audioPlayer.pause();
+            playPauseBtn.textContent = '재생';
+            lpImage.classList.remove('playing');
+        } else {
+            if (!audioPlayer.src) {
+                playSong(currentSongIndex);
+            } else {
+                audioPlayer.play();
+                playPauseBtn.textContent = '일시정지';
+                lpImage.classList.add('playing');
+            }
+        }
+        isPlaying = !isPlaying;
+    }
+
+    function playNext() {
+        currentSongIndex = (currentSongIndex + 1) % audioFiles.length;
+        playSong(currentSongIndex);
+    }
+
+    function playPrev() {
+        currentSongIndex = (currentSongIndex - 1 + audioFiles.length) % audioFiles.length;
+        playSong(currentSongIndex);
+    }
+
+    function updatePlaylistActiveState() {
+        const listItems = playlistElement.querySelectorAll('.playlist-item');
+        listItems.forEach((item, index) => {
+            if (index === currentSongIndex) {
+                item.classList.add('active');
+                item.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+            } else {
+                item.classList.remove('active');
+            }
+        });
+    }
+
+    playPauseBtn.addEventListener('click', togglePlayPause);
+    prevBtn.addEventListener('click', playPrev);
+    nextBtn.addEventListener('click', playNext);
+    audioPlayer.addEventListener('ended', playNext);
+
+    document.addEventListener('DOMContentLoaded', () => {
+        if (audioFiles.length === 0) {
+            currentSongDisplay.textContent = "오디오 파일이 없습니다.";
+            playPauseBtn.disabled = true;
+            prevBtn.disabled = true;
+            nextBtn.disabled = true;
+        } else {
+            createPlaylist();
+            currentSongDisplay.textContent = "재생 대기: " + audioFiles[currentSongIndex].replace('.mp3', '');
+            updatePlaylistActiveState();
+        }
+    });
+</script>
+
+</body>
+</html>
