@@ -34,12 +34,12 @@
 - task_id: #20
   description: 서브 메뉴 구성 (Configure sub-menus)
   status: Done
-  notes: Music 메뉴 아래에 BEATS, LOOPS 서브 메뉴를 구성함.
+  notes: languages.yaml을 수정하여 Music 메뉴 아래에 BEATS, LOOPS 서브탭이 표시되도록 최종 수정함. (Finally fixed the BEATS, LOOPS sub-tabs to be displayed under the Music menu by editing languages.yaml.)
 
 - task_id: #29, #후5
   description: Commit 개수 달성 (Reach commit goals)
   status: In Progress
-  notes: 현재 약 46개. 목표는 50개, 150개입니다.
+  notes: 현재 약 47개. 목표는 50개, 150개입니다.
 
 - issue_id: lp_player_implementation
   description: LP판 디자인의 새로운 음악 플레이어 구현 (Implement new music player with LP design)
