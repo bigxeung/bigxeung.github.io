@@ -39,7 +39,7 @@
 - task_id: #29, #후5
   description: Commit 개수 달성 (Reach commit goals)
   status: In Progress
-  notes: 현재 약 57개. 목표는 50개, 150개입니다.
+  notes: 현재 약 58개. 목표는 50개, 150개입니다.
 
 - issue_id: lp_player_implementation
   description: LP판 디자인의 새로운 음악 플레이어 구현 (Implement new music player with LP design)
@@ -110,6 +110,11 @@
   description: 연구실적 탭 이름 변경 (Rename Publication tab)
   status: Done
   notes: '연구실적' 탭의 이름을 'PDF'로 변경함. (Changed the name of the 'Publications' tab to 'PDF'.)
+
+- issue_id: add_seo_meta_tags
+  description: SEO 메타 태그 추가 및 수정 (Add and correct SEO meta tags)
+  status: Done
+  notes: custom_head.html에 JSON-LD, Open Graph, Twitter 카드 등 SEO 관련 메타 태그를 추가하고 동적 URL로 수정함. (Added SEO-related meta tags such as JSON-LD, Open Graph, and Twitter Cards to custom_head.html and updated them with dynamic URLs.)
 
 ## 해결되지 않은 문제 (Unresolved Issues)
 
