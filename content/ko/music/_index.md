@@ -2,9 +2,7 @@
 title: 음악
 type: page
 weight: 40
-menu:
-  main:
-    identifier: music
+
 ---
 
 # 음악 라이브러리

@@ -3,7 +3,97 @@
 #     desired widget in your `content/home/` folder.
 #   The weight parameter defines the order that the links will appear in.
 
-# Navigation Links
-#   To link a homepage widget, specify the URL as a hash `#` followed by the filename of the
-#     desired widget in your `content/home/` folder.
-#   The weight parameter defines the order that the links will appear in.
+main:
+  - name: Home
+    url: /
+    weight: 10
+
+  - name: 소식
+    url: /ko/post/
+    weight: 20
+    
+  - name: 경력
+    url: /ko/career/
+    weight: 30
+    identifier: career
+
+  - name: 프로듀서
+    url: /ko/career/producer/
+    parent: career
+    weight: 1
+
+  - name: 프로그래머
+    url: /ko/career/programmer/
+    parent: career
+    weight: 2
+
+  - name: 음악
+    url: /ko/music/
+    weight: 40
+    identifier: music
+
+  - name: BEATS
+    url: /ko/music/beats/
+    parent: music
+    weight: 1
+
+  - name: LOOPS
+    url: /ko/music/loops/
+    parent: music
+    weight: 2
+
+  - name: 프로젝트
+    url: /ko/project/
+    weight: 45
+
+  - name: PDF
+    url: /ko/pdf/
+    weight: 50
+
+en:
+  main:
+    - name: Home
+      url: /en/
+      weight: 10
+
+    - name: News
+      url: /en/post/
+      weight: 20
+
+    - name: Career
+      url: /en/career/
+      weight: 30
+      identifier: career
+
+    - name: Producer
+      url: /en/career/producer/
+      parent: career
+      weight: 1
+
+    - name: Programmer
+      url: /en/career/programmer/
+      parent: career
+      weight: 2
+
+    - name: Music
+      url: /en/music/
+      weight: 40
+      identifier: music
+
+    - name: BEATS
+      url: /en/music/beats/
+      parent: music
+      weight: 1
+
+    - name: LOOPS
+      url: /en/music/loops/
+      parent: music
+      weight: 2
+
+    - name: Project
+      url: /en/project/
+      weight: 45
+
+    - name: PDF
+      url: /en/pdf/
+      weight: 50

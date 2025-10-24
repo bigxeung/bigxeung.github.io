@@ -1,8 +1,7 @@
 ---
 title: News
 weight: 20
-menu:
-  main:
+
 
 
 # Listing view

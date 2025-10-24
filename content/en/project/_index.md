@@ -1,11 +1,11 @@
 ---
-title: 프로젝트
+title: Project
 date: 2025-10-24
 type: landing
 
 banner:
   image: coders.jpg
-  caption: '프로젝트'
+  caption: 'Project'
   text_color_light: true
   filters:
     brightness: 0.7

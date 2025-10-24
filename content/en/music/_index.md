@@ -2,9 +2,7 @@
 title: Music
 type: page
 weight: 40
-menu:
-  main:
-    identifier: music
+
 ---
 
 # Music Library
