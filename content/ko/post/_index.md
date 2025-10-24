@@ -5,8 +5,8 @@ menu:
   main:
 
 
-# Listing view
-view: compact
+# # Listing view
+# view: compact
 
 # Optional banner image (relative to `assets/media/` folder).
 banner:
