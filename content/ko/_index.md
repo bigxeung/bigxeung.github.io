@@ -64,8 +64,11 @@ sections:
       title: 프로듀싱/프로그래밍
       subtitle:
       text:
-      count: 5
+      count: 9
       filters:
+        folders:
+          - post
+          - project
         author: ''
         category: ''
         exclude_featured: false
@@ -73,7 +76,6 @@ sections:
         tag: ''
       offset: 0
       order: desc
-      page_type: post
     design:
       view: simple-title
       columns: '1'

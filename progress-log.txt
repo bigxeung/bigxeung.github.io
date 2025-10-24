@@ -8,8 +8,8 @@
 
 - task_id: #1, #7, #33
   description: 프로젝트 및 게시물 콘텐츠 추가 (Add project/post content)
-  status: In Progress
-  notes: 포트폴리오에 표시할 프로젝트(3개 이상) 및 게시물이 없습니다. 사용자가 첫 번째 게시물을 수정했습니다.
+  status: Done
+  notes: 포트폴리오에 표시할 프로젝트(3개 이상) 및 게시물이 없습니다. 사용자가 첫 번째 게시물을 수정했습니다. 3개의 프로젝트와 1개의 게시물을 추가하고 메인 페이지에 표시하도록 설정하여 9개 이상의 카드를 만들었습니다.
 
 - task_id: #4, #5
   description: '경력' 정보 추가 (Add 'Experience' to profile)
@@ -28,8 +28,8 @@
 
 - task_id: #31
   description: 메뉴 대표 이미지 설정 (Set featured images for menus)
-  status: Not Started
-  notes: 'post' 등 메뉴 페이지 상단에 대표 이미지 설정이 필요합니다.
+  status: Done
+  notes: 'post' 등 메뉴 페이지 상단에 대표 이미지 설정이 필요합니다. 'post'와 'project' 섹션에 배너 이미지를 설정했습니다.
 
 - task_id: #20
   description: 서브 메뉴 구성 (Configure sub-menus)
