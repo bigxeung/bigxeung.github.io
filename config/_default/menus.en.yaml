@@ -1,0 +1,39 @@
+# This file configures the English menu
+
+main:
+  - name: "Home"
+    url: "/en/"
+    weight: 10
+  - name: "News"
+    url: "/en/post/"
+    weight: 20
+  - identifier: career
+    name: "Career"
+    url: "/en/career/"
+    weight: 30
+  - name: "Producer"
+    parent: "career"
+    url: "/en/career/producer/"
+    weight: 1
+  - name: "Programmer"
+    parent: "career"
+    url: "/en/career/programmer/"
+    weight: 2
+  - identifier: music
+    name: "Music"
+    url: "/en/music/"
+    weight: 40
+  - name: "BEATS"
+    parent: "music"
+    url: "/en/music/beats/"
+    weight: 1
+  - name: "LOOPS"
+    parent: "music"
+    url: "/en/music/loops/"
+    weight: 2
+  - name: "Project"
+    url: "/en/project/"
+    weight: 45
+  - name: "PDF"
+    url: "/en/pdf/"
+    weight: 50
