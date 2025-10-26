@@ -5,33 +5,33 @@
 {
   "@context": "https://schema.org",
   "@type": "Person",
-  "name": "빅승",
-  "alternateName": "Bigxeung",
-  "jobTitle": "음악 프로듀서 및 소프트웨어 개발자",
-  "description": "프로듀싱과 프로그래밍을 동시에 하는 꿈을 좇는 사나이입니다. 음악 프로듀싱, 소프트웨어 개발, 그리고 최신 연구에 대한 정보를 공유합니다.",
+  "name": "{{ i18n "name" }}",
+  "alternateName": "{{ i18n "alternate_name" }}",
+  "jobTitle": "{{ i18n "job_title" }}",
+  "description": "{{ i18n "description" }}",
   "url": "{{ .Site.BaseURL }}",
   "image": "{{ $imageUrl }}",
   "affiliation": {
     "@type": "Organization",
-    "name": "빅승의 작업실",
+    "name": "{{ i18n "affiliation_name" }}",
     "url": "{{ .Site.BaseURL }}"
   },
   "alumniOf": {
     "@type": "CollegeOrUniversity",
-    "name": "전북대학교",
+    "name": "{{ i18n "alumni_of_name" }}",
     "department": {
       "@type": "Organization",
-      "name": "컴퓨터공학부"
+      "name": "{{ i18n "department_name" }}"
     }
   },
   "knowsAbout": [
-    "Music Production",
-    "Software Development",
-    "Programming",
-    "Beatmaking",
-    "Web Development",
-    "Computer Science",
-    "Semiconductor Research"
+    "{{ i18n "knows_about_music_production" }}",
+    "{{ i18n "knows_about_software_development" }}",
+    "{{ i18n "knows_about_programming" }}",
+    "{{ i18n "knows_about_beatmaking" }}",
+    "{{ i18n "knows_about_web_development" }}",
+    "{{ i18n "knows_about_computer_science" }}",
+    "{{ i18n "knows_about_semiconductor_research" }}"
   ],
   "sameAs": [
     "https://github.com/bigxeung/bigxeung.github.io",
@@ -41,26 +41,28 @@
   "contactPoint": {
     "@type": "ContactPoint",
     "email": "bigxeung@gmail.com",
-    "contactType": "personal"
+    "contactType": "{{ i18n "contact_type_personal" }}"
   }
 }
 </script>
 <meta name="google-site-verification" content="OK_HGLI4O_d3HZIp2fETcq0Mii6rYbJmK0WV5kiIiWc" />
 <meta property="og:type" content="website">
 <meta property="og:url" content="{{ .Site.BaseURL }}">
-<meta property="og:title" content="빅승의 작업실 - 프로듀싱 & 프로그래밍 스튜디오">
-<meta property="og:description" content="프로듀싱과 프로그래밍을 동시에 하는 꿈을 좇는 사나이입니다. 음악 프로듀싱, 소프트웨어 개발, 최신 연구에 대한 정보를 공유합니다.">
+<meta property="og:title" content="{{ i18n "og_title" }}">
+<meta property="og:description" content="{{ i18n "og_description" }}">
 <meta property="og:image" content="{{ $imageUrl }}">
-<meta property="og:site_name" content="빅승의 작업실">
-<meta property="og:locale" content="ko_KR">
+<meta property="og:site_name" content="{{ i18n "affiliation_name" }}">
+<meta property="og:locale" content="{{ .Site.Language.LanguageCode }}">
 
 <meta property="twitter:card" content="summary_large_image">
 <meta property="twitter:url" content="{{ .Site.BaseURL }}">
-<meta property="twitter:title" content="빅승의 작업실 - 프로듀싱 & 프로그래밍 스튜디오">
-<meta property="twitter:description" content="프로듀싱과 프로그래밍을 동시에 하는 꿈을 좇는 사나이입니다. 음악 프로듀싱, 소프트웨어 개발, 최신 연구에 대한 정보를 공유합니다.">
+<meta property="twitter:title" content="{{ i18n "og_title" }}">
+<meta property="twitter:description" content="{{ i18n "og_description" }}">
 <meta property="twitter:image" content="{{ $imageUrl }}">
-<meta name="twitter:creator" content="@bigxeung">
-<meta name="author" content="빅승 (Bigxeung)">
-<meta name="keywords" content="빅승, bigxeung, 프로듀싱, 프로그래밍, 음악, 개발, 소프트웨어, 논문, 연구, 비트메이킹, 컴퓨터공학, 전북대학교, studio, music production, software development, coding, research">
+<meta name="twitter:creator" content="{{ i18n "twitter_creator" }}">
+<meta name="author" content="{{ i18n "author_name" }}">
+<meta name="keywords" content="{{ i18n "keywords" }}">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="{{ .Site.BaseURL }}">
+
+<button id="theme-toggle" aria-label="Toggle theme"><i class="fas fa-adjust"></i></button>
