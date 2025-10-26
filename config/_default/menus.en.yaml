@@ -5,6 +5,12 @@ main:
   - name: Posts
     url: /en/post/
     weight: 20
+  - name: Projects
+    url: /en/project/
+    weight: 30
+  - name: Gallery
+    url: /en/gallery/
+    weight: 35
   - name: Music
     identifier: music
     url: /en/music/
