@@ -17,6 +17,14 @@ organizations:
   - name: 전북대학교
     url: 'https://www.jbnu.ac.kr/'
 
+# Work experience
+experience:
+  - company: Example Inc.
+    position: Software Engineer
+    from: 2024
+    to: present
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristique placerat feugiat ac, facilisis vitae arcu. Proin eget egestas augue. Praesent ut sem nec arcu pellentesque aliquet. Duis dapibus diam vel metus tempus vulputate.'
+
 education:
   courses:
     - course: 컴퓨터공학 학사

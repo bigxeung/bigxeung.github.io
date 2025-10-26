@@ -14,13 +14,21 @@ role: 프로듀서/프로그래머
 
 # Organizations/Affiliations
 organizations:
-  - name: 전북대학교
+  - name: Jeonbuk National University
     url: 'https://www.jbnu.ac.kr/'
+
+# Work experience
+experience:
+  - company: Example Inc.
+    position: Software Engineer
+    from: 2024
+    to: present
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristique placerat feugiat ac, facilisis vitae arcu. Proin eget egestas augue. Praesent ut sem nec arcu pellentesque aliquet. Duis dapibus diam vel metus tempus vulputate.'
 
 education:
   courses:
-    - course: 컴퓨터공학 학사
-      institution: 전북대학교
+    - course: BS in Computer Science
+      institution: Jeonbuk National University
       year: 2024
 
 # Social/Academic Networking
@@ -54,12 +62,12 @@ user_groups:
 email: 'bigxeung@gmail.com'
 ---
 
-저는 원래 힙합음악을 좋아했어요. 한창 쇼미더머니가 유행하던 시절 저도 자연스레 당시 유행이던 힙합음악들을 접해듣게 됐고 여러 힙합음악들을 찾아 들으며 점점 관심이 깊어졌답니다.
+I originally liked hip-hop music. When Show Me the Money was popular, I naturally came to listen to the hip-hop music that was popular at the time, and as I looked for and listened to various hip-hop music, my interest deepened.
 
-원래는 동아리 활동 정도만 이어나갔지만 군대에 입대하곤 제 생각이 달라졌어요. 일병 당시 이어폰을 타고 흘러나온 칸예 웨스트의 《College Dropout》은 문화적 충격이었어요. 당시 저에게 힙합은 그저 신나는 랩과 캐치한 멜로디들 그리고 멋진 라이프스타일 뿐이었는데 음악으로 삶을 전달할 수 있다는 사실을 알고 정말 충격받았어요.
+Originally, I only continued with my club activities, but my thoughts changed after I joined the army. The 《College Dropout》 by Kanye West that flowed through my earphones when I was a private was a culture shock. At the time, hip-hop was just exciting rap, catchy melodies, and a cool lifestyle, but I was really shocked to learn that you can convey life through music.
 
-특히 앨범의 클라이막스 “Through the Wire"의 멜로디와 스토리가 엮이는 방식은 제 머릿속에 번개처럼 번쩍이는 깨달음을 주었어요. ‘음악은 래퍼만의 영역이 아니라, 비트를 만드는 프로듀서의 캔버스구나.’
+In particular, the way the melody and story of the album's climax, “Through the Wire," were intertwined gave me a lightning-like realization. ‘Music is not just the domain of rappers, but the canvas of the producer who makes the beats.’
 
-그날로 저는 리스너의 자리에서 벗어나 창조자가 되기로 결심했어요. 용돈을 털어 중고 미디 장비를 샀고, 독학으로 DAW 프로그램을 익히기 시작했다. 칸예가 소울을 쪼개 조합했듯, 나도 세상의 모든 소리를 나만의 방식으로 재해석하고 싶었어요. 그렇게 현재 더 많은 음악을 듣고 더 많은 음악을 만들어 제 꿈을 이루기 위해 열심히 달리고 있답니다.
+That day, I decided to step out of the listener's seat and become a creator. I spent my allowance on used MIDI equipment and started teaching myself how to use a DAW program. Just as Kanye broke down and combined soul, I wanted to reinterpret all the sounds of the world in my own way. So now I'm listening to more music, making more music, and working hard to achieve my dream.
 
-<a href="/uploads/resume.pdf" class="btn btn-primary" target="_blank" rel="noopener"><i class="fas fa-download"></i> 이력서 다운로드</a>
+<a href="/uploads/resume.pdf" class="btn btn-primary" target="_blank" rel="noopener"><i class="fas fa-download"></i> Download Resume</a>
