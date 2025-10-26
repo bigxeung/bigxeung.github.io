@@ -17,11 +17,11 @@ main:
     weight: 40
   - name: BEATS
     url: /en/music/beats/
-    weight: 1
+    weight: 41
     parent: music
   - name: LOOPS
     url: /en/music/loops/
-    weight: 2
+    weight: 42
     parent: music
   - name: Contact
     url: /en/contact/

@@ -10,6 +10,9 @@ main:
     weight: 30
   - name: 음악
     identifier: music
+  - name: 갤러리
+    url: /ko/gallery/
+    weight: 35
     url: /ko/music/
     weight: 40
   - name: BEATS
