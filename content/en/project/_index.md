@@ -1,5 +1,5 @@
 ---
-title: 포트폴리오
+title: portfolio
 weight: 20
 
 # Listing view

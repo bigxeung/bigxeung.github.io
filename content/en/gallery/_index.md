@@ -1,3 +1,3 @@
 ---
-title: 라이프스타일
+title: lifestyle
 ---
