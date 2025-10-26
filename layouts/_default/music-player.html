@@ -56,15 +56,15 @@
 
   const audioFiles = [
     {{ range(readDir "static/audio") }}
-  { { if (hasSuffix.Name ".mp3") } }
-  {
-    src: "{{ .Name }}",
-      title: "{{ .Name | replaceRE "\.mp3$" "" | humanize }}",
-        artist: "Unknown Artist",
+      {{ if (hasSuffix .Name ".mp3") }}
+        {
+          src: "{{ .Name }}",
+          title: "{{ .Name | replaceRE "\\.mp3$" "" | humanize }}",
+          artist: "Unknown Artist",
           albumArt: placeholderAlbumArt
-  },
-  { { end } }
-  { { end } }
+        },
+      {{ end }}
+    {{ end }}
     ];
 
   function createPlaylist() {
