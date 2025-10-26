@@ -1,11 +1,8 @@
-en:
-  languageCode: en-us
-  title: SeungHyun Kim
-  weight: 2
-  contentDir: content/en
-
 ko:
-  languageCode: ko
-  title: 김승현
-  weight: 1
+  languageCode: ko-KR
   contentDir: content/ko
+  title: 빅승의 작업실
+en:
+  languageCode: en-US
+  contentDir: content/en
+  title: BIGXEUNG's Workshop
