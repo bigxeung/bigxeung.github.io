@@ -1,0 +1,126 @@
+# Gemini Task Log
+
+## Instructions
+- 이 파일은 다음 세션에서 Gemini 어시스턴트가 컨텍스트를 파악하기 위한 로그입니다.
+- Status: Not Started, In Progress, Done, Paused
+
+## 남은 작업 목록 (Remaining Tasks)
+
+- task_id: #1, #7, #33
+  description: 프로젝트 및 게시물 콘텐츠 추가 (Add project/post content)
+  status: Done
+  notes: 포트폴리오에 표시할 프로젝트(3개 이상) 및 게시물이 없습니다. 사용자가 첫 번째 게시물을 수정했습니다. 3개의 프로젝트와 1개의 게시물을 추가하고 메인 페이지에 표시하도록 설정하여 9개 이상의 카드를 만들었습니다.
+
+- task_id: #4, #5
+  description: '경력' 정보 추가 (Add 'Experience' to profile)
+  status: Not Started
+  notes: 자기소개에 '경력(Experience)' 항목 추가가 필요합니다.
+
+- task_id: #16
+  description: 연락처 정보 수정 (Update contact info)
+  status: Not Started
+  notes: 연락처 페이지가 아직 샘플 데이터입니다.
+
+- task_id: #11
+  description: Custom View 제작 (Create Custom View)
+  status: Done
+  notes: 'simple-title.html'과 'title-and-summary.html' 뷰를 생성하고, 메인 페이지에 'simple-title'을 적용함.
+
+- task_id: #31
+  description: 메뉴 대표 이미지 설정 (Set featured images for menus)
+  status: Done
+  notes: 'post' 등 메뉴 페이지 상단에 대표 이미지 설정이 필요합니다. 'post'와 'project' 섹션에 배너 이미지를 설정했습니다.
+
+- task_id: #20
+  description: 서브 메뉴 구성 (Configure sub-menus)
+  status: Done
+  notes: 중앙 메뉴 설정 대신, 각 콘텐츠 파일에서 메뉴를 정의하는 '섹션 메뉴' 방식으로 재구성하여 서브탭 문제를 최종 해결함. (Instead of a central menu configuration, finally resolved the sub-tab issue by restructuring to a 'Section Menu' method where each content file defines the menu.)
+
+- task_id: #29, #후5
+  description: Commit 개수 달성 (Reach commit goals)
+  status: In Progress
+  notes: 현재 약 59개. 목표는 50개, 150개입니다.
+
+- issue_id: lp_player_implementation
+  description: LP판 디자인의 새로운 음악 플레이어 구현 (Implement new music player with LP design)
+  status: Done
+  notes: 사용자가 제공한 가이드에 따라 static 폴더 기반의 플레이어를 구현함. (Implemented a player based on the static folder according to the user's guide.)
+
+- issue_id: fix_music_menu_link_404
+  description: 음악 탭 404 오류 재수정 (Re-fix music tab 404 error)
+  status: Done
+  notes: 다국어 설정으로 인한 경로 문제를 해결하기 위해 메뉴 URL을 pageRef로 변경함. (Changed menu URL to pageRef to resolve path issues due to multilingual setup.)
+
+- issue_id: sync_en_ko_homepage
+  description: 영어/한국어 메인 페이지 동기화 (Sync English/Korean main pages)
+  status: Done
+  notes: 한국어 페이지 기준으로 영어 페이지에 슬라이더를 추가하고 일부 디자인을 통일함. (Added slider and unified some designs on the English page based on the Korean page.)
+
+- issue_id: sync_en_ko_content
+  description: 영어/한국어 콘텐츠 동기화 (contact, tour) (Sync English/Korean content)
+  status: Done
+  notes: contact와 tour 페이지의 영어 버전 내용을 한국어 버전을 기반으로 번역하여 동기화함. (Translated and synchronized the English versions of the contact and tour pages based on the Korean versions.)
+
+- issue_id: fix_slider_autoscroll
+  description: 모든 슬라이더 7초 자동 전환 설정 (Set all sliders to auto-scroll every 7s)
+  status: Done
+  notes: Tour 페이지들의 슬라이더 loop 및 interval 설정을 수정함. (Corrected the loop and interval settings for the sliders on the Tour pages.)
+
+- issue_id: replace_main_slider
+  description: 메인 페이지 슬라이더 교체 (Replace main page slider)
+  status: Done
+  notes: 메인 페이지의 슬라이더를 Tour 페이지의 슬라이더로 교체하고 최상단으로 이동시킴. (Replaced the main page slider with the one from the Tour page and moved it to the top.)
+
+- issue_id: reimplement_music_final_final
+  description: 음악 섹션 및 서브탭 최종 재구현 (Final re-implementation of music section and sub-tabs)
+  status: Done
+  notes: 페이지 번들, 커스텀 레이아웃, pageRef를 사용한 가장 안정적인 방식으로 BEATS/LOOPS 서브메뉴 및 자동 재생 목록 플레이어를 구현함. (Implemented the desired sub-tab style and automated player using page bundles, a custom layout, and pageRef.)
+
+- issue_id: update_social_share_image
+  description: 홈페이지 대표 이미지(소셜 공유) 변경 (Change site's representative image (social share))
+  status: Done
+  notes: avatar.jpg를 복사하여 params.yaml의 share.image로 설정함. (Copied avatar.jpg and set it as share.image in params.yaml.)
+
+- issue_id: apply_text_justification
+  description: 텍스트 양쪽 정렬 적용 (Apply text justification)
+  status: Done
+  notes: 사이트 내 4개의 문단에 text-align: justify 스타일을 적용함. (Applied text-align: justify style to 4 paragraphs on the site.)
+
+- issue_id: update_favicon
+  description: 홈페이지 title 로고(파비콘) 변경 (Change homepage title logo (favicon))
+  status: Done
+  notes: assets/media/icon.png 파일을 추가하여 파비콘을 변경함. (Changed the favicon by adding the assets/media/icon.png file.)
+
+- issue_id: style_lp_player
+  description: LP 음악 플레이어 UI 개선 (Improve LP music player UI)
+  status: Done
+  notes: 플레이어 크기를 키우고, 색상 테마를 파란색으로 변경하는 등 전반적인 CSS 스타일을 개선함. (Improved overall CSS style, including increasing player size and changing the color theme to blue.)
+
+- issue_id: fix_lp_player_alignment
+  description: LP 플레이어 중앙 정렬 수정 (Fix LP player center alignment)
+  status: Done
+  notes: CSS 셀렉터를 body에서 main으로 변경하여 플레이어의 중앙 정렬을 최종 수정함. (Changed CSS selector from body to main to finalize player's center alignment.)
+
+- issue_id: fix_header_visibility
+  description: 음악 페이지 헤더 미표시 오류 수정 (Fix header not showing on music pages)
+  status: Done
+  notes: 레이아웃 CSS가 테마와 충돌하는 문제를 해결하기 위해 스타일을 별도 div로 분리하여 최종 수정함. (Finally fixed by isolating styles into a separate div to resolve conflict with the theme's header.)
+
+- issue_id: rename_publication_tab
+  description: 연구실적 탭 이름 변경 (Rename Publication tab)
+  status: Done
+  notes: '연구실적' 탭의 이름을 'PDF'로 변경함. (Changed the name of the 'Publications' tab to 'PDF'.)
+
+- issue_id: add_seo_meta_tags
+  description: SEO 메타 태그 추가 및 수정 (Add and correct SEO meta tags)
+  status: Done
+  notes: custom_head.html에 JSON-LD, Open Graph, Twitter 카드 등 SEO 관련 메타 태그를 추가하고 동적 URL로 수정함. (Added SEO-related meta tags such as JSON-LD, Open Graph, and Twitter Cards to custom_head.html and updated them with dynamic URLs.)
+
+- issue_id: fix_gsc_verification
+  description: Google Search Console 인증 문제 해결 (Fix GSC verification issue)
+  status: Done
+  notes: custom_head.html 파일의 위치를 테마가 인식하는 올바른 경로로 이동하여 해결함. (Resolved by moving the custom_head.html file to the correct path recognized by the theme.)
+
+## 해결되지 않은 문제 (Unresolved Issues)
+
+
