@@ -11,10 +11,3 @@
 ---
 
 This site was generated from the [Hugo Research Group Theme](https://github.com/wowchemy/starter-hugo-research-group).
-// commit #151 - 2025-10-26 14:06:53
-
-// commit #152 - 2025-10-26 14:06:54
-
-// commit #153 - 2025-10-26 14:06:54
-
-// commit #154 - 2025-10-26 14:06:54
