@@ -1,5 +1,5 @@
 ---
-title: "갤러리 사진 4"
+title: "4"
 image:
   filename: 4.jpg
 ---
