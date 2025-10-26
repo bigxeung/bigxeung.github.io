@@ -1,0 +1,22 @@
+main:
+  - name: Main
+    url: /en/
+    weight: 10
+  - name: Posts
+    url: /en/post/
+    weight: 20
+  - name: Music
+    identifier: music
+    url: /en/music/
+    weight: 40
+  - name: BEATS
+    url: /en/music/beats/
+    weight: 1
+    parent: music
+  - name: LOOPS
+    url: /en/music/loops/
+    weight: 2
+    parent: music
+  - name: Contact
+    url: /en/contact/
+    weight: 60

@@ -1,0 +1,25 @@
+main:
+  - name: 메인
+    url: /ko/
+    weight: 10
+  - name: 소식
+    url: /ko/post/
+    weight: 20
+  - name: 포트폴리오
+    url: /ko/project/
+    weight: 30
+  - name: 음악
+    identifier: music
+    url: /ko/music/
+    weight: 40
+  - name: BEATS
+    url: /ko/music/beats/
+    weight: 41
+    parent: music
+  - name: LOOPS
+    url: /ko/music/loops/
+    weight: 42
+    parent: music
+  - name: 연락처
+    url: /ko/contact/
+    weight: 60

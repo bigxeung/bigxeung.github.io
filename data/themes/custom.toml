@@ -1,0 +1,24 @@
+[light]
+  # Primary
+  primary = "#6f42c1"
+
+  background = "#ffffff"
+
+  # Menu
+  menu_primary = "#f8f9fa"
+  menu_text = "#343a40"
+  menu_text_active = "#6f42c1"
+  menu_title = "#343a40"
+
+  # Home sections
+  home_section_odd = "#f8f9fa"
+  home_section_even = "#f8f9fa"
+
+[dark]
+  primary = "#9370db"
+  link = "#9370db"
+  link_hover = "#a98ce4"
+  background = "#121212"
+  home_section_odd = "#1e1e1e"
+  home_section_even = "#1e1e1e"
+  menu_primary = "#1e1e1e"

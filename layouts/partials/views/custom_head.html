@@ -1,0 +1,67 @@
+{{- $image := resources.Get "media/social_card.jpg" -}}
+{{- $imageUrl := $image.Permalink -}}
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "빅승",
+  "alternateName": "Bigxeung",
+  "jobTitle": "음악 프로듀서 및 소프트웨어 개발자",
+  "description": "프로듀싱과 프로그래밍을 동시에 하는 꿈을 좇는 사나이입니다. 음악 프로듀싱, 소프트웨어 개발, 그리고 최신 연구에 대한 정보를 공유합니다.",
+  "url": "{{ .Site.BaseURL }}",
+  "image": "{{ $imageUrl }}",
+  "affiliation": {
+    "@type": "Organization",
+    "name": "빅승의 작업실",
+    "url": "{{ .Site.BaseURL }}"
+  },
+  "alumniOf": {
+    "@type": "CollegeOrUniversity",
+    "name": "전북대학교",
+    "department": {
+      "@type": "Organization",
+      "name": "컴퓨터공학부"
+    }
+  },
+  "knowsAbout": [
+    "Music Production",
+    "Software Development",
+    "Programming",
+    "Beatmaking",
+    "Web Development",
+    "Computer Science",
+    "Semiconductor Research"
+  ],
+  "sameAs": [
+    "https://github.com/bigxeung/bigxeung.github.io",
+    "https://instagram.com/bigxeung",
+    "https://twitter.com/bigxeung"
+  ],
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "email": "bigxeung@gmail.com",
+    "contactType": "personal"
+  }
+}
+</script>
+
+<meta name="google-site-verification" content="OK_HGLI4O_d3HZIp2fETcq0Mii6rYbJmK0WV5kiIiWc" />
+<meta property="og:type" content="website">
+<meta property="og:url" content="{{ .Site.BaseURL }}">
+<meta property="og:title" content="빅승의 작업실 - 프로듀싱 & 프로그래밍 스튜디오">
+<meta property="og:description" content="프로듀싱과 프로그래밍을 동시에 하는 꿈을 좇는 사나이입니다. 음악 프로듀싱, 소프트웨어 개발, 최신 연구에 대한 정보를 공유합니다.">
+<meta property="og:image" content="{{ $imageUrl }}">
+<meta property="og:site_name" content="빅승의 작업실">
+<meta property="og:locale" content="ko_KR">
+
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="{{ .Site.BaseURL }}">
+<meta property="twitter:title" content="빅승의 작업실 - 프로듀싱 & 프로그래밍 스튜디오">
+<meta property="twitter:description" content="프로듀싱과 프로그래밍을 동시에 하는 꿈을 좇는 사나이입니다. 음악 프로듀싱, 소프트웨어 개발, 최신 연구에 대한 정보를 공유합니다.">
+<meta property="twitter:image" content="{{ $imageUrl }}">
+<meta name="twitter:creator" content="@bigxeung">
+<meta name="author" content="빅승 (Bigxeung)">
+<meta name="keywords" content="빅승, bigxeung, 프로듀싱, 전북대 김승현, 전북대, 김승현, 프로그래밍, 음악, 개발, 소프트웨어, 논문, 연구, 비트메이킹, 컴퓨터공학, 전북대학교, studio, music production, software development, coding, research">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="{{ .Site.BaseURL }}">

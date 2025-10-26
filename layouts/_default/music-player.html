@@ -1,0 +1,188 @@
+{{ define "main" }}
+
+</style>
+
+<div class="music-player-wrapper">
+  <div class="player-container">
+    <div class="album-art-container">
+      <img src="{{ .Site.BaseURL }}images/placeholder_album_art.png" alt="Album Art" class="album-art" id="albumArt">
+    </div>
+
+    <div class="song-info">
+      <h2 id="currentSongTitle">재생 중: 없음</h2>
+      <p id="currentArtist"></p>
+    </div>
+
+    <div class="progress-bar-container">
+      <div class="progress-bar" id="progressBar">
+        <div class="progress" id="progress"></div>
+      </div>
+      <div class="time-info">
+        <span id="currentTime">0:00</span>
+        <span id="duration">0:00</span>
+      </div>
+    </div>
+
+    <div class="controls">
+      <button id="prevBtn" class="control-btn"><i class="fas fa-backward"></i></button>
+      <button id="playPauseBtn" class="control-btn play-pause-btn"><i class="fas fa-play"></i></button>
+      <button id="nextBtn" class="control-btn"><i class="fas fa-forward"></i></button>
+    </div>
+
+    <div id="playlist-container">
+      <h3>재생 목록</h3>
+      <ul id="playlist"></ul>
+    </div>
+  </div>
+</div>
+
+<script>
+  const audioPlayer = document.getElementById('audioPlayer') || new Audio();
+  const playPauseBtn = document.getElementById('playPauseBtn');
+  const prevBtn = document.getElementById('prevBtn');
+  const nextBtn = document.getElementById('nextBtn');
+  const playlistElement = document.getElementById('playlist');
+  const currentSongTitleDisplay = document.getElementById('currentSongTitle');
+  const currentArtistDisplay = document.getElementById('currentArtist');
+  const albumArt = document.getElementById('albumArt');
+  const progressBar = document.getElementById('progressBar');
+  const progress = document.getElementById('progress');
+  const currentTimeDisplay = document.getElementById('currentTime');
+  const durationDisplay = document.getElementById('duration');
+
+  let currentSongIndex = 0;
+  let isPlaying = false;
+  const placeholderAlbumArt = "{{ .Site.BaseURL }}images/placeholder_album_art.png";
+
+  const audioFiles = [
+    {{ range(readDir "static/audio") }}
+  { { if (hasSuffix.Name ".mp3") } }
+  {
+    src: "{{ .Name }}",
+      title: "{{ .Name | replaceRE "\.mp3$" "" | humanize }}",
+        artist: "Unknown Artist",
+          albumArt: placeholderAlbumArt
+  },
+  { { end } }
+  { { end } }
+    ];
+
+  function createPlaylist() {
+    playlistElement.innerHTML = '';
+    audioFiles.forEach((song, index) => {
+      const listItem = document.createElement('li');
+      listItem.classList.add('playlist-item');
+      listItem.dataset.index = index;
+      listItem.innerHTML = `
+                <img src="${song.albumArt}" alt="Album Art" class="playlist-album-art">
+                <div class="playlist-item-info">
+                    <span class="playlist-item-title">${song.title}</span>
+                    <span class="playlist-item-artist">${song.artist}</span>
+                </div>
+                <span class="play-indicator"><i class="fas fa-volume-up"></i></span>
+            `;
+      listItem.addEventListener('click', () => playSong(index));
+      playlistElement.appendChild(listItem);
+    });
+  }
+
+  function playSong(index) {
+    if (index >= 0 && index < audioFiles.length) {
+      currentSongIndex = index;
+      const song = audioFiles[currentSongIndex];
+      audioPlayer.src = "{{ .Site.BaseURL }}audio/" + song.src;
+      currentSongTitleDisplay.textContent = song.title;
+      currentArtistDisplay.textContent = song.artist;
+      albumArt.src = song.albumArt;
+
+      audioPlayer.play();
+      isPlaying = true;
+      playPauseBtn.innerHTML = '<i class="fas fa-pause"></i>';
+      albumArt.classList.add('playing');
+      updatePlaylistActiveState();
+    }
+  }
+
+  function togglePlayPause() {
+    if (isPlaying) {
+      audioPlayer.pause();
+      playPauseBtn.innerHTML = '<i class="fas fa-play"></i>';
+      albumArt.classList.remove('playing');
+    } else {
+      if (!audioPlayer.src) {
+        playSong(currentSongIndex);
+      } else {
+        audioPlayer.play();
+        playPauseBtn.innerHTML = '<i class="fas fa-pause"></i>';
+        albumArt.classList.add('playing');
+      }
+    }
+    isPlaying = !isPlaying;
+  }
+
+  function playNext() {
+    currentSongIndex = (currentSongIndex + 1) % audioFiles.length;
+    playSong(currentSongIndex);
+  }
+
+  function playPrev() {
+    currentSongIndex = (currentSongIndex - 1 + audioFiles.length) % audioFiles.length;
+    playSong(currentSongIndex);
+  }
+
+  function updatePlaylistActiveState() {
+    const listItems = playlistElement.querySelectorAll('.playlist-item');
+    listItems.forEach((item, index) => {
+      if (index === currentSongIndex) {
+        item.classList.add('active');
+        item.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+      } else {
+        item.classList.remove('active');
+      }
+    });
+  }
+
+  function formatTime(seconds) {
+    const minutes = Math.floor(seconds / 60);
+    const remainingSeconds = Math.floor(seconds % 60);
+    return `${minutes}:${remainingSeconds < 10 ? '0' : ''}${remainingSeconds}`;
+  }
+
+  audioPlayer.addEventListener('timeupdate', () => {
+    const { currentTime, duration } = audioPlayer;
+    const progressPercent = (currentTime / duration) * 100;
+    progress.style.width = `${progressPercent}%`;
+    currentTimeDisplay.textContent = formatTime(currentTime);
+    durationDisplay.textContent = formatTime(duration);
+  });
+
+  progressBar.addEventListener('click', (e) => {
+    const progressBarWidth = progressBar.clientWidth;
+    const clickX = e.offsetX;
+    const duration = audioPlayer.duration;
+    audioPlayer.currentTime = (clickX / progressBarWidth) * duration;
+  });
+
+  playPauseBtn.addEventListener('click', togglePlayPause);
+  prevBtn.addEventListener('click', playPrev);
+  nextBtn.addEventListener('click', playNext);
+  audioPlayer.addEventListener('ended', playNext);
+
+  document.addEventListener('DOMContentLoaded', () => {
+    if (audioFiles.length === 0) {
+      currentSongTitleDisplay.textContent = "오디오 파일이 없습니다.";
+      playPauseBtn.disabled = true;
+      prevBtn.disabled = true;
+      nextBtn.disabled = true;
+    } else {
+      createPlaylist();
+      const firstSong = audioFiles[currentSongIndex];
+      currentSongTitleDisplay.textContent = "재생 대기: " + firstSong.title;
+      currentArtistDisplay.textContent = firstSong.artist;
+      albumArt.src = firstSong.albumArt;
+      updatePlaylistActiveState();
+    }
+  });
+</script>
+
+{{ end }}

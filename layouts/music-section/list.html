@@ -1,0 +1,135 @@
+{{ define "main" }}
+
+<div class="music-player-wrapper">
+  <div class="player-container">
+    <h1>{{ .Title }}</h1>
+
+    <div class="album-art-container">
+      {{ $lp_image := resources.Get "media/icons/icon.png" }}
+      <img src="{{ $lp_image.RelPermalink }}" alt="LP Record" class="album-art" id="lpImage">
+    </div>
+
+    <div class="controls">
+      <button id="prevBtn" class="control-btn"><i class="fas fa-backward"></i></button>
+      <button id="playPauseBtn" class="control-btn play-pause-btn"><i class="fas fa-play"></i></button>
+      <button id="nextBtn" class="control-btn"><i class="fas fa-forward"></i></button>
+    </div>
+
+    <audio id="audioPlayer" controls style="width: 100%; margin-top: 15px; display: none;"></audio>
+    <div id="currentSong">재생 중: 없음</div>
+
+    <div id="playlist-container">
+      <h3>재생 목록</h3>
+      <ul id="playlist">
+      </ul>
+    </div>
+  </div>
+</div>
+
+<script>
+  const audioPlayer = document.getElementById('audioPlayer');
+  const playPauseBtn = document.getElementById('playPauseBtn');
+  const prevBtn = document.getElementById('prevBtn');
+  const nextBtn = document.getElementById('nextBtn');
+  const playlistElement = document.getElementById('playlist');
+  const currentSongDisplay = document.getElementById('currentSong');
+  const lpImage = document.getElementById('lpImage');
+
+  let currentSongIndex = 0;
+  let isPlaying = false;
+
+  const audioFileNames = [
+    {{ range .Resources.Match "*.mp3" }}
+  "{{ .Name }}",
+    {{ end }}
+    ];
+  const audioFileUrls = [
+    {{ range .Resources.Match "*.mp3" }}
+  "{{ .RelPermalink }}",
+    {{ end }}
+    ];
+
+  function createPlaylist() {
+    playlistElement.innerHTML = '';
+    audioFileNames.forEach((file, index) => {
+      const listItem = document.createElement('li');
+      listItem.classList.add('playlist-item');
+      listItem.dataset.index = index;
+      listItem.innerHTML = `<span class="playlist-item-title">${file.replace('.mp3', '')}</span><span class="play-indicator"></span>`;
+      listItem.addEventListener('click', () => playSong(index));
+      playlistElement.appendChild(listItem);
+    });
+  }
+
+  function playSong(index) {
+    if (index >= 0 && index < audioFileUrls.length) {
+      currentSongIndex = index;
+      audioPlayer.src = audioFileUrls[currentSongIndex];
+      currentSongDisplay.textContent = "재생 중: " + audioFileNames[currentSongIndex].replace('.mp3', '');
+
+      audioPlayer.play();
+      isPlaying = true;
+      playPauseBtn.innerHTML = '<i class="fas fa-pause"></i>';
+      lpImage.classList.add('playing');
+      updatePlaylistActiveState();
+    }
+  }
+
+  function togglePlayPause() {
+    if (isPlaying) {
+      audioPlayer.pause();
+      playPauseBtn.innerHTML = '<i class="fas fa-play"></i>';
+      lpImage.classList.remove('playing');
+    } else {
+      if (!audioPlayer.src) {
+        playSong(currentSongIndex);
+      } else {
+        audioPlayer.play();
+        playPauseBtn.innerHTML = '<i class="fas fa-pause"></i>';
+        lpImage.classList.add('playing');
+      }
+    }
+    isPlaying = !isPlaying;
+  }
+
+  function playNext() {
+    currentSongIndex = (currentSongIndex + 1) % audioFileUrls.length;
+    playSong(currentSongIndex);
+  }
+
+  function playPrev() {
+    currentSongIndex = (currentSongIndex - 1 + audioFileUrls.length) % audioFileUrls.length;
+    playSong(currentSongIndex);
+  }
+
+  function updatePlaylistActiveState() {
+    const listItems = playlistElement.querySelectorAll('.playlist-item');
+    listItems.forEach((item, index) => {
+      if (index === currentSongIndex) {
+        item.classList.add('active');
+        item.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+      } else {
+        item.classList.remove('active');
+      }
+    });
+  }
+
+  playPauseBtn.addEventListener('click', togglePlayPause);
+  prevBtn.addEventListener('click', playPrev);
+  nextBtn.addEventListener('click', playNext);
+  audioPlayer.addEventListener('ended', playNext);
+
+  document.addEventListener('DOMContentLoaded', () => {
+    if (audioFileUrls.length === 0) {
+      currentSongDisplay.textContent = "오디오 파일이 없습니다.";
+      playPauseBtn.disabled = true;
+      prevBtn.disabled = true;
+      nextBtn.disabled = true;
+    } else {
+      createPlaylist();
+      currentSongDisplay.textContent = "재생 대기: " + audioFileNames[currentSongIndex].replace('.mp3', '');
+      updatePlaylistActiveState();
+    }
+  });
+</script>
+{{ end }}
