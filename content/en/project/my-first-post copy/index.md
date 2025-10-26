@@ -1,18 +1,15 @@
 ---
-title: 사물함 프로젝트
-summary: 터미널 명령어로만 폴더에 있는 항목 옮기기
+title: Locker Project
+summary: Moving folder items using only terminal commands
 tags:
-  -project
+  - project
 date: 2025-09-25
 type: project
 ---
 
-### 키오스크 프로젝트
+### Locker Project
 
 
 <div style="text-align: justify;">
-리눅스 과목을 수강하며
-암호를 통해서만 접근 가능한 사물함 폴더 A에 있는 모든 항목들을 터미널에서
-아주 간단한 명령어들을 이용하여 검증된 사용자만 이용할 수 있게 암호를 입력해
-보안이 걸려있는 사물함 폴더 B로 안전하게 옮길 수 있는 프로젝트를 진행했습니다
+For my Linux course, I developed a project to securely move all items from a password-protected folder (Locker A) to another secure folder (Locker B). The entire process is managed through the terminal, where a verified user can execute the transfer with simple commands after entering the correct password.
 </div>
