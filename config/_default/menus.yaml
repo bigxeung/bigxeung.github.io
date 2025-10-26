@@ -7,12 +7,12 @@ main:
     weight: 20
   - name: 포트폴리오
     url: /ko/project/
-    weight: 30
-  - name: 음악
-    identifier: music
+    weight: 30    
   - name: 갤러리
     url: /ko/gallery/
     weight: 35
+  - name: 음악
+    identifier: music
     url: /ko/music/
     weight: 40
   - name: BEATS
