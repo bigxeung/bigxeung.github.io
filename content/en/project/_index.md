@@ -1,5 +1,5 @@
 ---
-title: 포트폴리오
+title: Projects
 weight: 20
 
 # Listing view
