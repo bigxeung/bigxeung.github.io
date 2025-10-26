@@ -13,12 +13,12 @@
 
 - task_id: #4, #5
   description: '경력' 정보 추가 (Add 'Experience' to profile)
-  status: Not Started
+  status: Done
   notes: 자기소개에 '경력(Experience)' 항목 추가가 필요합니다.
 
 - task_id: #16
   description: 연락처 정보 수정 (Update contact info)
-  status: Not Started
+  status: Done
   notes: 연락처 페이지가 아직 샘플 데이터입니다.
 
 - task_id: #11
