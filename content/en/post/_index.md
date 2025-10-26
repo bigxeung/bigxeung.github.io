@@ -1,5 +1,5 @@
 ---
-title: 소식
+title: why
 weight: 20
 
 # Listing view
