@@ -39,7 +39,7 @@
 - task_id: #29, #후5
   description: Commit 개수 달성 (Reach commit goals)
   status: In Progress
-  notes: 현재 약 74개. 목표는 50개, 150개입니다.
+  notes: 현재 약 76개. 목표는 50개, 150개입니다.
 
 - issue_id: lp_player_implementation
   description: LP판 디자인의 새로운 음악 플레이어 구현 (Implement new music player with LP design)
