@@ -8,8 +8,8 @@ sections:
   - block: slider
     content:
       slides:
-      - title: 빅승의 작업실에 오신 것을 환영합니다
-        content: 음악과 코드가 만나는 공간.
+      - title: Welcome to Bigxeung's Studio
+        content: A space where music and code meet.
         align: center
         background:
           image:
@@ -19,7 +19,7 @@ sections:
           position: center
           color: '#666'
       - title: PRODUCER
-        content: '세상을 움직이는 새로운 비트를 만듭니다.'
+        content: 'Crafting new beats that move the world.'
         align: left
         background:
           image:
@@ -29,7 +29,7 @@ sections:
           position: center
           color: '#555'
       - title: PROGRAMMER
-        content: '논리적인 코드로 아이디어를 현실로 구현합니다.'
+        content: 'Bringing ideas to life with logical code.'
         align: left
         background:
           image:
@@ -50,18 +50,18 @@ sections:
   - block: about.biography
     id: about
     content:
-      title: 소개
+      title: About Me
       username: bigxeung
 
   - block: contact
     id: contact
     content:
-      title: 연락처
+      title: Contact
       subtitle:
-      text: '제 연락처는 아래와 같습니다.'
+      text: 'My contact details are below.'
       email: bigxeung@gmail.com
       coordinates:
         latitude: '35.846906'
         longitude: '127.129432'
-      directions: 7호관 301호로 오세요
+      directions: Find me in Building 7, Room 301
 ---
